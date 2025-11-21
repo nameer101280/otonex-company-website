@@ -31,19 +31,19 @@ export function Specialties() {
   ];
 
   return (
-    <section id="specialties" className="py-32 bg-black border-t border-purple-800/30 relative">
+    <section id="specialties" className="py-16 sm:py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-gradient-to-br from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl sm:text-6xl font-light text-white mb-6 animate-fade-in-up">What We Build</h2>
-          <p className="text-gray-400 text-lg animate-fade-in-up stagger-1">Complete solutions for your business needs</p>
+        <div className="text-center mb-14 sm:mb-20">
+          <h2 className="text-3xl sm:text-5xl font-light text-white mb-4 sm:mb-6 animate-fade-in-up">What We Build</h2>
+          <p className="text-gray-400 text-base sm:text-lg animate-fade-in-up stagger-1">Complete solutions for your business needs</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
           {specialties.map((specialty, i) => {
             const Icon = specialty.icon;
             return (
@@ -52,8 +52,8 @@ export function Specialties() {
                 className="bg-black/40 border border-purple-800/40 hover:border-purple-700/70 transition-all duration-300 group hover:bg-gradient-to-br hover:from-purple-900/30 hover:to-black animate-fade-in-up overflow-hidden"
                 style={{ animationDelay: `${i * 0.08}s` }}
               >
-                <CardContent className="p-6 flex flex-col h-full relative">
-                  <Icon className="h-7 w-7 text-purple-500 mb-4 group-hover:text-purple-400 transition-colors duration-200" />
+                <CardContent className="p-5 sm:p-6 flex flex-col h-full relative">
+                  <Icon className="h-7 w-7 text-purple-500 mb-3 group-hover:text-purple-400 transition-colors duration-200" />
                   <h3 className="text-base font-semibold text-white mb-2">{specialty.title}</h3>
                   <p className="text-gray-400 text-sm flex-grow leading-relaxed">{specialty.description}</p>
                   

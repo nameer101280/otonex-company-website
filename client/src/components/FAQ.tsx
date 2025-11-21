@@ -32,15 +32,15 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-black border-t border-purple-800/30 relative">
+    <section id="faq" className="py-16 sm:py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-light text-white mb-4 animate-fade-in-up">Frequently Asked</h2>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl font-light text-white mb-3 sm:mb-4 animate-fade-in-up">Frequently Asked</h2>
           <p className="text-gray-400 animate-fade-in-up stagger-1">Questions about our services and process</p>
         </div>
 
@@ -53,7 +53,7 @@ export function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full px-6 py-4 flex items-center justify-between hover:bg-purple-900/10 transition-colors duration-200"
+                className="w-full px-5 sm:px-6 py-4 flex items-center justify-between hover:bg-purple-900/10 transition-colors duration-200"
                 data-testid={`button-faq-${i}`}
               >
                 <span className="font-medium text-white text-left text-sm">{faq.question}</span>

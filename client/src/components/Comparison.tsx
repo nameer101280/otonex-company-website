@@ -12,19 +12,19 @@ export function Comparison() {
   ];
 
   return (
-    <section id="comparison" className="py-24 bg-black border-t border-purple-800/30 relative">
+    <section id="comparison" className="py-16 sm:py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-gradient-to-bl from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-light text-white mb-4 animate-fade-in-up">Services</h2>
-          <p className="text-gray-400 text-lg animate-fade-in-up stagger-1">Complete solutions for your needs</p>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl font-light text-white mb-3 sm:mb-4 animate-fade-in-up">Services</h2>
+          <p className="text-gray-400 text-base sm:text-lg animate-fade-in-up stagger-1">Complete solutions for your needs</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {solutions.map((solution, i) => (
             <Card 
               key={i}

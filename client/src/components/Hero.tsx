@@ -20,23 +20,22 @@ export function Hero() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="text-left space-y-6">
           <div className="animate-fade-in-up">
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
-              <span className="text-white">Custom Products That</span>
-              <br />
-              <span className="brand-logo block mt-3 animate-pulse-glow">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
+              <span className="text-white block">Custom Products That</span>
+              <span className="brand-logo block mt-2 sm:mt-3 animate-pulse-glow">
                 Turn Clicks Into Revenue
               </span>
             </h1>
           </div>
           
-          <p className="text-lg text-gray-300 max-w-2xl animate-fade-in-up stagger-1 font-normal leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-300 max-w-2xl animate-fade-in-up stagger-1 font-normal leading-relaxed">
             We think like your customers, not just developers. Web apps, mobile solutions, and intelligent automation built to convert, scale, and dominate your market.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up stagger-2">
             <Button 
               onClick={() => scrollToSection('specialties')}
-              className="bg-gradient-to-r from-purple-700 to-purple-900 hover:from-purple-600 hover:to-purple-800 text-white transition-all duration-300 rounded-sm px-8 py-3 text-sm font-medium w-fit"
+              className="bg-gradient-to-r from-purple-700 to-purple-900 hover:from-purple-600 hover:to-purple-800 text-white transition-all duration-300 rounded-sm px-6 sm:px-8 py-3 text-sm font-medium w-full sm:w-auto"
               data-testid="button-cta-book"
             >
               Book an Intro Call
@@ -44,14 +43,14 @@ export function Hero() {
             <Button 
               variant="outline" 
               onClick={() => scrollToSection('contact')}
-              className="border border-purple-700/50 text-purple-300 hover:bg-purple-900/20 transition-all duration-300 rounded-sm px-8 py-3 text-sm font-medium w-fit"
+              className="border border-purple-700/50 text-purple-300 hover:bg-purple-900/20 transition-all duration-300 rounded-sm px-6 sm:px-8 py-3 text-sm font-medium w-full sm:w-auto"
               data-testid="button-cta-portfolio"
             >
               View Our Work
             </Button>
           </div>
 
-          <p className="text-sm text-gray-600 pt-8 animate-fade-in-up stagger-3 font-normal">
+          <p className="text-xs sm:text-sm text-gray-600 pt-8 animate-fade-in-up stagger-3 font-normal">
             From concept to market in weeks, not quarters. Trusted by 50+ founders scaling to 6-7 figures.
           </p>
         </div>

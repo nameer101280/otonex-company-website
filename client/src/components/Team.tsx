@@ -5,22 +5,22 @@ import founderImage from '@assets/generated_images/professional_developer_headsh
 
 export function Team() {
   return (
-    <section id="team" className="py-24 bg-black border-t border-purple-800/30 relative">
+    <section id="team" className="py-16 sm:py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-gradient-to-bl from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl sm:text-5xl font-light text-white mb-4">Our Team</h2>
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+          <h2 className="text-3xl sm:text-5xl font-light text-white mb-3 sm:mb-4">Our Team</h2>
           <p className="text-gray-400">Experts committed to your success</p>
         </div>
 
         <div className="max-w-2xl mx-auto animate-fade-in-up stagger-1">
           <Card className="overflow-hidden border border-purple-800/40 hover:border-purple-700/70 bg-black/40 hover:bg-gradient-to-br hover:from-purple-900/30 hover:to-black transition-all duration-300">
             <div className="grid md:grid-cols-2">
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative h-full min-h-[280px] sm:min-h-[400px]">
                 <img
                   src={founderImage}
                   alt="Nameer Arshad"
@@ -29,9 +29,9 @@ export function Team() {
                 />
               </div>
               <div>
-                <CardContent className="p-8 space-y-6">
+                <CardContent className="p-6 sm:p-8 space-y-6">
                   <div>
-                    <h3 className="text-2xl font-semibold text-white">Nameer Arshad</h3>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-white">Nameer Arshad</h3>
                     <p className="text-purple-400 text-sm mt-1">Founder & Lead Engineer</p>
                   </div>
 

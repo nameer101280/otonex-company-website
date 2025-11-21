@@ -8,22 +8,22 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-black border-t border-purple-800/30 relative">
+    <section id="contact" className="py-16 sm:py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-gradient-to-br from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl sm:text-5xl font-light text-white mb-4">Let's Build Together</h2>
-          <p className="text-gray-400">Ready to transform your idea into reality?</p>
+        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
+          <h2 className="text-3xl sm:text-5xl font-light text-white mb-3 sm:mb-4">Let's Build Together</h2>
+          <p className="text-gray-400 text-sm sm:text-base">Ready to transform your idea into reality?</p>
         </div>
 
-        <Card className="mb-12 border border-purple-800/40 bg-black/40 hover:border-purple-700/70 transition-all duration-300 hover:bg-gradient-to-br hover:from-purple-900/30 hover:to-black animate-fade-in-up stagger-1">
-          <CardContent className="p-8 sm:p-12">
-            <div className="space-y-10">
-              <div className="grid md:grid-cols-2 gap-8">
+        <Card className="mb-10 sm:mb-12 border border-purple-800/40 bg-black/40 hover:border-purple-700/70 transition-all duration-300 hover:bg-gradient-to-br hover:from-purple-900/30 hover:to-black animate-fade-in-up stagger-1">
+          <CardContent className="p-6 sm:p-10">
+            <div className="space-y-8 sm:space-y-10">
+              <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
                 <div className="flex items-start gap-4 animate-fade-in-up stagger-2">
                   <Mail className="h-5 w-5 text-purple-700/70 mt-0.5" />
                   <div>

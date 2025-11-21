@@ -68,16 +68,16 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 sm:py-32">
+    <section id="projects" className="py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display tracking-tight">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 font-display tracking-tight">Featured Projects</h2>
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             A collection of client solutions spanning web applications, mobile apps, and enterprise platforms.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-5 sm:gap-6">
           {projects.map((project) => (
             <Card
               key={project.id}
@@ -88,7 +88,7 @@ export function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110"
+                  className="w-full h-56 sm:h-64 object-cover transition-all duration-500 group-hover:scale-110"
                   data-testid={`img-project-${project.id}`}
                 />
               </div>

@@ -37,19 +37,19 @@ const integrationCategories = [
 
 export function Integrations() {
   return (
-    <section id="integrations" className="py-24 bg-black border-t border-purple-800/30 relative">
+    <section id="integrations" className="py-16 sm:py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-gradient-to-b from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-light text-white mb-4 animate-fade-in-up">Tech Stack</h2>
-          <p className="text-gray-400 text-lg animate-fade-in-up stagger-1">Modern technologies we work with</p>
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-5xl font-light text-white mb-3 sm:mb-4 animate-fade-in-up">Tech Stack</h2>
+          <p className="text-gray-400 text-base sm:text-lg animate-fade-in-up stagger-1">Modern technologies we work with</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
           {integrationCategories.map((category, categoryIdx) => (
             <div key={category.category} className="space-y-4 animate-fade-in-up" style={{ animationDelay: `${categoryIdx * 0.1}s` }}>
               <h3 className="text-sm font-semibold text-purple-400 uppercase tracking-wide px-1">{category.category}</h3>
