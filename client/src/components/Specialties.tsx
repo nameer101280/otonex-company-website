@@ -1,50 +1,41 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Cloud, Code, Smartphone, Cog, Globe } from 'lucide-react';
+import { Cloud, Code, Smartphone, Cog } from 'lucide-react';
 
 export function Specialties() {
   const specialties = [
     {
       icon: Cog,
-      title: 'DevOps Automation',
-      description: 'CI/CD pipelines, infrastructure automation, and deployment orchestration for seamless operations.',
-      color: 'from-purple-500 to-purple-600'
+      title: 'DevOps',
+      description: 'CI/CD pipelines, infrastructure automation, and deployment orchestration.'
     },
     {
       icon: Cloud,
-      title: 'Cloud Solutions',
-      description: 'AWS, Azure, and GCP deployments with scalability, security, and cost optimization.',
-      color: 'from-cyan-500 to-cyan-600'
+      title: 'Cloud',
+      description: 'AWS, Azure, and GCP deployments with scalability and optimization.'
     },
     {
       icon: Code,
       title: 'Web Development',
-      description: 'Modern web applications with React, Node.js, and cutting-edge frameworks.',
-      color: 'from-blue-500 to-cyan-500'
+      description: 'Modern web applications with React, Node.js, and frameworks.'
     },
     {
       icon: Cog,
       title: 'ERP Systems',
-      description: 'Enterprise resource planning solutions tailored to your business processes.',
-      color: 'from-purple-600 to-blue-600'
+      description: 'Enterprise resource planning solutions for business processes.'
     },
     {
       icon: Smartphone,
       title: 'Mobile Apps',
-      description: 'Native and cross-platform mobile solutions for iOS and Android.',
-      color: 'from-cyan-400 to-purple-500'
+      description: 'Native and cross-platform solutions for iOS and Android.'
     }
   ];
 
   return (
-    <section id="specialties" className="py-24 bg-black border-t border-cyan-500/10">
+    <section id="specialties" className="py-24 bg-black border-t border-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4">
-            Core <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Specialties</span>
-          </h2>
-          <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            End-to-end solutions across the entire technology stack
-          </p>
+          <h2 className="text-5xl sm:text-6xl font-light text-white mb-4">Core Specialties</h2>
+          <p className="text-gray-500">End-to-end solutions across the technology stack</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -53,18 +44,13 @@ export function Specialties() {
             return (
               <Card 
                 key={i}
-                className="bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 hover:border-cyan-500/50 transition-all duration-300 group hover:shadow-lg hover:shadow-cyan-500/20 animate-fade-in-up"
-                style={{ animationDelay: `${i * 0.1}s` }}
+                className="bg-transparent border border-gray-800 hover:border-gray-700 transition-all duration-300 group animate-fade-in-up"
+                style={{ animationDelay: `${i * 0.05}s` }}
               >
                 <CardContent className="p-6 flex flex-col h-full">
-                  <div className={`mb-4 p-3 rounded-lg bg-gradient-to-r ${specialty.color} w-fit`}>
-                    <Icon className="h-6 w-6 text-white" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{specialty.title}</h3>
-                  <p className="text-gray-400 text-sm flex-grow">{specialty.description}</p>
-                  <div className="mt-4 pt-4 border-t border-white/10">
-                    <p className="text-xs text-cyan-400 font-semibold">Learn More →</p>
-                  </div>
+                  <Icon className="h-6 w-6 text-gray-400 mb-4 group-hover:text-white transition-colors duration-200" />
+                  <h3 className="text-base font-medium text-white mb-2">{specialty.title}</h3>
+                  <p className="text-gray-500 text-sm flex-grow leading-relaxed">{specialty.description}</p>
                 </CardContent>
               </Card>
             );
