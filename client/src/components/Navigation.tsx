@@ -26,9 +26,9 @@ export function Navigation() {
 
   const navLinks = [
     { label: 'About', href: 'about' },
+    { label: 'Services', href: 'services' },
     { label: 'Projects', href: 'projects' },
-    { label: 'Experience', href: 'experience' },
-    { label: 'Skills', href: 'skills' },
+    { label: 'Team', href: 'team' },
     { label: 'Contact', href: 'contact' },
   ];
 
@@ -45,7 +45,7 @@ export function Navigation() {
             className="text-xl font-bold font-display hover-elevate active-elevate-2 px-2 py-1 rounded-md"
             data-testid="link-logo"
           >
-            Portfolio
+            CloudForge Solutions
           </button>
 
           <div className="hidden md:flex items-center gap-1">

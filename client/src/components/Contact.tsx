@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Github, Linkedin, Mail, Twitter, ArrowUp } from 'lucide-react';
-import { SiDribbble } from 'react-icons/si';
+import { Linkedin, Mail, ArrowUp, Phone, MapPin } from 'lucide-react';
 
 export function Contact() {
   const scrollToTop = () => {
@@ -12,51 +11,90 @@ export function Contact() {
     <section id="contact" className="py-20 sm:py-32">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display">Let's Work Together</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display">Let's Build Something Great</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm always interested in hearing about new projects and opportunities.
+            Ready to transform your infrastructure? Get in touch for a free consultation.
           </p>
         </div>
 
         <Card className="mb-12">
           <CardContent className="p-8 sm:p-12">
-            <div className="text-center space-y-6">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">Get In Touch</h3>
-                <a
-                  href="mailto:alex.chen@example.com"
-                  className="inline-flex items-center gap-2 text-2xl sm:text-3xl font-bold text-primary hover:underline"
-                  data-testid="link-email-primary"
-                >
-                  <Mail className="h-8 w-8" />
-                  alex.chen@example.com
-                </a>
+            <div className="space-y-8">
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl font-semibold">Contact Information</h3>
               </div>
 
-              <div className="pt-6">
-                <p className="text-muted-foreground mb-6">Follow me on social media</p>
-                <div className="flex justify-center gap-3">
-                  <Button variant="outline" size="icon" asChild data-testid="link-social-github">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                      <Github className="h-5 w-5" />
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Email</h4>
+                    <a
+                      href="mailto:nameerarshad@hotmail.com"
+                      className="text-primary hover:underline"
+                      data-testid="link-email-primary"
+                    >
+                      nameerarshad@hotmail.com
                     </a>
-                  </Button>
-                  <Button variant="outline" size="icon" asChild data-testid="link-social-linkedin">
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                      <Linkedin className="h-5 w-5" />
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="icon" asChild data-testid="link-social-twitter">
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                      <Twitter className="h-5 w-5" />
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="icon" asChild data-testid="link-social-dribbble">
-                    <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">
-                      <SiDribbble className="h-5 w-5" />
-                    </a>
-                  </Button>
+                  </div>
                 </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <Phone className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Phone</h4>
+                    <a
+                      href="tel:+32465410698"
+                      className="text-primary hover:underline"
+                      data-testid="link-phone"
+                    >
+                      +32 465 41 06 98
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <MapPin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Location</h4>
+                    <p className="text-foreground/80">Brussels, Belgium</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <Linkedin className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">LinkedIn</h4>
+                    <a
+                      href="https://linkedin.com/in/nameer-arshad-13a5b620b"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                      data-testid="link-social-linkedin"
+                    >
+                      Connect with us
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-6 border-t text-center">
+                <p className="text-muted-foreground mb-4">
+                  Interested in working together? Let's discuss your project requirements.
+                </p>
+                <Button size="lg" asChild data-testid="button-schedule-consultation">
+                  <a href="mailto:nameerarshad@hotmail.com?subject=Project Consultation">
+                    Schedule a Consultation
+                  </a>
+                </Button>
               </div>
             </div>
           </CardContent>
@@ -73,7 +111,7 @@ export function Contact() {
             Back to Top
           </Button>
           <p className="text-sm text-muted-foreground">
-            © 2024 Alex Chen. All rights reserved.
+            © 2024 CloudForge Solutions. All rights reserved.
           </p>
         </footer>
       </div>
