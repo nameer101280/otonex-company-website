@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from './ThemeToggle';
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,50 +24,55 @@ export function Navigation() {
   };
 
   const navLinks = [
-    { label: 'About', href: 'about' },
+    { label: 'Home', href: 'hero' },
+    { label: 'About', href: 'stats' },
     { label: 'Services', href: 'services' },
-    { label: 'Projects', href: 'projects' },
     { label: 'Team', href: 'team' },
-    { label: 'Contact', href: 'contact' },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/90 backdrop-blur-lg border-b border-border/50' : 'bg-transparent'
+        isScrolled ? 'bg-black/95 backdrop-blur border-b border-white/10' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-lg font-semibold font-display hover-elevate active-elevate-2 px-2 py-1 rounded-md tracking-tight"
+            className="text-lg font-bold text-white hover:text-purple-400 transition-colors"
             data-testid="link-logo"
           >
-            CloudForge Solutions
+            OTONEX
           </button>
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <Button
+              <button
                 key={link.href}
-                variant="ghost"
                 onClick={() => scrollToSection(link.href)}
+                className="text-white/80 hover:text-white transition-colors text-sm font-medium"
                 data-testid={`link-${link.href}`}
               >
                 {link.label}
-              </Button>
+              </button>
             ))}
-            <ThemeToggle />
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-purple-600 hover:bg-purple-700 text-white rounded-md px-6 py-2"
+              data-testid="button-cta-book"
+            >
+              Book a call
+            </Button>
           </div>
 
           <div className="md:hidden flex items-center gap-2">
-            <ThemeToggle />
             <Button
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               data-testid="button-menu-toggle"
+              className="text-white"
             >
               {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
@@ -77,19 +81,26 @@ export function Navigation() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-background border-b">
+        <div className="md:hidden bg-black/95 border-b border-white/10">
           <div className="px-4 py-2 space-y-1">
             {navLinks.map((link) => (
-              <Button
+              <button
                 key={link.href}
-                variant="ghost"
                 onClick={() => scrollToSection(link.href)}
-                className="w-full justify-start"
+                className="w-full text-left px-4 py-2 text-white/80 hover:text-white transition-colors text-sm font-medium"
                 data-testid={`link-mobile-${link.href}`}
               >
                 {link.label}
-              </Button>
+              </button>
             ))}
+            <div className="px-4 py-2">
+              <Button 
+                onClick={() => scrollToSection('contact')}
+                className="w-full bg-purple-600 hover:bg-purple-700 text-white rounded-md"
+              >
+                Book a call
+              </Button>
+            </div>
           </div>
         </div>
       )}

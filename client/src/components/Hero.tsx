@@ -10,48 +10,40 @@ export function Hero() {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <section id="hero" className="min-h-screen flex items-center pt-20 relative overflow-hidden bg-black">
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="text-center space-y-10 max-w-4xl mx-auto">
-          {/* Bold headline inspired by Xtract */}
           <div className="space-y-6 animate-fade-in-up">
-            <h1 className="text-7xl sm:text-8xl lg:text-9xl font-bold tracking-tight leading-[1.1] text-black">
-              <span className="block">Automate Your</span>
-              <span className="block text-primary">DevOps Pipeline.</span>
+            <p className="text-sm text-purple-400 font-semibold tracking-wide uppercase">About Us</p>
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight text-white">
+              Helping Businesses Grow
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto font-normal">
-              AI-powered automation for DevOps teams. Scale faster, deploy smarter, and focus on what matters.
+            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto font-normal">
+              Otonex helps businesses streamline operations and grow faster with AI-powered automation.
             </p>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4 animate-fade-in-up stagger-1">
-            <Button onClick={() => scrollToSection('stats')} size="lg" className="rounded-full px-8 py-6 text-base font-medium bg-primary hover:bg-primary/90">
-              Get Started Free
-            </Button>
-            <Button variant="outline" size="lg" className="rounded-full px-8 py-6 text-base font-medium">
-              Schedule Demo
-            </Button>
-          </div>
-
-          {/* Trust Indicator */}
-          <div className="pt-8 animate-fade-in-up stagger-2">
-            <p className="text-sm text-gray-500 mb-4">Trusted by 100+ teams worldwide</p>
-            <div className="flex flex-wrap justify-center gap-4">
-              {['AWS', 'Google Cloud', 'Azure', 'Kubernetes', 'Docker', 'GitLab'].map((tech) => (
-                <span key={tech} className="px-4 py-2 bg-gray-50 text-gray-700 rounded-full text-sm font-medium">
-                  {tech}
-                </span>
+          <div className="pt-8 animate-fade-in-up stagger-1">
+            <p className="text-sm text-gray-400 mb-6">Over 50+ businesses trust us</p>
+            <div className="flex flex-wrap justify-center gap-6 items-center">
+              {['AWS', 'Google Cloud', 'Azure', 'Kubernetes', 'Docker', 'GitLab'].map((company) => (
+                <div key={company} className="text-gray-500 font-semibold text-sm">
+                  {company}
+                </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <button
             onClick={() => scrollToSection('stats')}
-            className="text-gray-400 hover:text-gray-600 transition-all duration-300 animate-bounce"
+            className="text-gray-500 hover:text-gray-300 transition-colors animate-bounce"
             data-testid="button-scroll-indicator"
           >
             <ChevronDown className="h-6 w-6" />

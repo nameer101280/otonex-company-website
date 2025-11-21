@@ -28,35 +28,35 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-20 sm:py-24 bg-white">
+    <section id="faq" className="py-24 bg-black border-t border-white/10">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-bold text-black mb-4">Frequently Asked Questions</h2>
-          <p className="text-xl text-gray-600">Everything you need to know about Otonex</p>
+          <h2 className="text-5xl sm:text-6xl font-bold text-white mb-4">We've Got the Answers</h2>
+          <p className="text-xl text-gray-400">Quick answers to your automation questions</p>
         </div>
 
         <div className="space-y-4">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="border border-gray-200 rounded-lg overflow-hidden animate-fade-in-up"
+              className="border border-white/10 overflow-hidden animate-fade-in-up"
               style={{ animationDelay: `${i * 0.05}s` }}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors"
+                className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/5 transition-colors"
                 data-testid={`button-faq-${i}`}
               >
-                <span className="font-semibold text-black text-left">{faq.question}</span>
+                <span className="font-semibold text-white text-left">{faq.question}</span>
                 <ChevronDown
-                  className={`h-5 w-5 text-gray-600 transition-transform duration-300 ${
+                  className={`h-5 w-5 text-gray-400 transition-transform duration-300 ${
                     openIndex === i ? 'rotate-180' : ''
                   }`}
                 />
               </button>
               {openIndex === i && (
-                <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                <div className="px-6 py-4 bg-black/50 border-t border-white/10">
+                  <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>
