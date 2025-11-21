@@ -6,33 +6,37 @@ export function FAQ() {
 
   const faqs = [
     {
-      question: 'How quickly can I get started?',
-      answer: 'Setup takes under 10 minutes. Our team guides you through the entire process with comprehensive onboarding and training.'
+      question: 'Do you offer custom web application development?',
+      answer: 'Yes. We build modern, scalable web applications using React, Node.js, and cloud platforms. From startups to enterprises, we handle everything from design to deployment.'
     },
     {
-      question: 'Is Autonex secure?',
-      answer: 'Yes. SOC 2 Type II compliance, end-to-end encryption, and regular security audits are included in all plans.'
+      question: 'Can you develop native mobile apps for iOS and Android?',
+      answer: 'Absolutely. We develop native iOS and Android applications, as well as cross-platform solutions that work seamlessly on both platforms with shared code.'
     },
     {
-      question: 'What platforms do you support?',
-      answer: 'AWS, Google Cloud, Azure, Kubernetes, Docker, GitHub, GitLab, Jenkins, and 50+ additional tools and platforms.'
+      question: 'What automation services do you provide?',
+      answer: 'We handle CI/CD pipelines, infrastructure automation, DevOps setup, deployment orchestration, and workflow automation to streamline your operations.'
     },
     {
-      question: 'Can I migrate existing systems?',
-      answer: 'Absolutely. Our specialists handle migration with zero downtime, ensuring a smooth transition from your existing setup.'
+      question: 'Do you manage cloud infrastructure?',
+      answer: 'Yes. We set up, manage, and optimize your cloud infrastructure on AWS, Azure, or GCP with security, scalability, and cost optimization built-in.'
     },
     {
-      question: 'What uptime guarantee?',
-      answer: '99.99% uptime with automatic failover, multi-region redundancy, and 24/7 monitoring and support.'
+      question: 'How long does a typical project take?',
+      answer: 'Timeline depends on project scope. Most web applications take 8-16 weeks, mobile apps 12-20 weeks, and automation projects 4-8 weeks. We provide detailed estimates upfront.'
+    },
+    {
+      question: 'What is your development process?',
+      answer: 'We follow agile methodology with regular sprints, weekly updates, and client feedback loops. You get visibility at every stage of development.'
     },
   ];
 
   return (
-    <section id="faq" className="py-32 bg-black border-t border-gray-900">
+    <section id="faq" className="py-24 bg-black border-t border-gray-900">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl sm:text-6xl font-light text-white mb-6 animate-fade-in-up">Questions</h2>
-          <p className="text-gray-500 text-lg animate-fade-in-up stagger-1">Common questions answered</p>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-light text-white mb-4 animate-fade-in-up">Frequently Asked</h2>
+          <p className="text-gray-500 animate-fade-in-up stagger-1">Everything you need to know about working with us</p>
         </div>
 
         <div className="space-y-3">
@@ -40,7 +44,7 @@ export function FAQ() {
             <div
               key={i}
               className="border border-gray-800 hover:border-gray-700 transition-all duration-300 rounded-lg overflow-hidden group hover:bg-white/[0.02] animate-fade-in-up"
-              style={{ animationDelay: `${i * 0.08}s` }}
+              style={{ animationDelay: `${i * 0.06}s` }}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
