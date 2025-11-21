@@ -7,19 +7,19 @@ export function FAQ() {
   const faqs = [
     {
       question: 'Do you offer custom web application development?',
-      answer: 'Yes. We build modern, scalable web applications using React, Node.js, and cloud platforms. From startups to enterprises, we handle everything from design to deployment.'
+      answer: 'Yes. We build modern, scalable web applications using React, Node.js, and cloud platforms. From MVPs to enterprise solutions, we handle everything from design to deployment and maintenance.'
     },
     {
-      question: 'Can you develop native mobile apps for iOS and Android?',
-      answer: 'Absolutely. We develop native iOS and Android applications, as well as cross-platform solutions that work seamlessly on both platforms with shared code.'
+      question: 'Can you develop native mobile apps?',
+      answer: 'Absolutely. We develop native iOS and Android applications, as well as cross-platform solutions that work seamlessly on both platforms with shared code and consistent user experience.'
     },
     {
       question: 'What automation services do you provide?',
-      answer: 'We handle CI/CD pipelines, infrastructure automation, DevOps setup, deployment orchestration, and workflow automation to streamline your operations.'
+      answer: 'We handle CI/CD pipelines, infrastructure automation, DevOps setup, deployment orchestration, and workflow automation to streamline your operations and reduce manual work.'
     },
     {
       question: 'Do you manage cloud infrastructure?',
-      answer: 'Yes. We set up, manage, and optimize your cloud infrastructure on AWS, Azure, or GCP with security, scalability, and cost optimization built-in.'
+      answer: 'Yes. We set up, manage, and optimize your cloud infrastructure on AWS, Azure, or GCP with security, scalability, and cost optimization built-in from day one.'
     },
     {
       question: 'How long does a typical project take?',
@@ -27,40 +27,45 @@ export function FAQ() {
     },
     {
       question: 'What is your development process?',
-      answer: 'We follow agile methodology with regular sprints, weekly updates, and client feedback loops. You get visibility at every stage of development.'
+      answer: 'We follow agile methodology with regular sprints, weekly updates, and client feedback loops. You get visibility at every stage of development and can adjust requirements as needed.'
     },
   ];
 
   return (
-    <section id="faq" className="py-24 bg-black border-t border-gray-900">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faq" className="py-24 bg-black border-t border-purple-600/20 relative">
+      {/* Background effect */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      </div>
+
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-light text-white mb-4 animate-fade-in-up">Frequently Asked</h2>
-          <p className="text-gray-500 animate-fade-in-up stagger-1">Everything you need to know about working with us</p>
+          <p className="text-gray-400 animate-fade-in-up stagger-1">Questions about our services and process</p>
         </div>
 
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="border border-gray-800 hover:border-gray-700 transition-all duration-300 rounded-lg overflow-hidden group hover:bg-white/[0.02] animate-fade-in-up"
+              className="border border-purple-600/30 hover:border-purple-600/70 transition-all duration-300 group hover:bg-purple-600/10 rounded-lg overflow-hidden animate-fade-in-up"
               style={{ animationDelay: `${i * 0.06}s` }}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/5 transition-colors duration-200"
+                className="w-full px-6 py-4 flex items-center justify-between hover:bg-purple-600/5 transition-colors duration-200"
                 data-testid={`button-faq-${i}`}
               >
                 <span className="font-medium text-white text-left text-sm">{faq.question}</span>
                 <ChevronDown
-                  className={`h-4 w-4 text-gray-500 transition-transform duration-300 flex-shrink-0 ml-2 ${
-                    openIndex === i ? 'rotate-180 text-gray-400' : ''
+                  className={`h-4 w-4 text-purple-600/70 transition-transform duration-300 flex-shrink-0 ml-2 ${
+                    openIndex === i ? 'rotate-180 text-purple-500' : ''
                   }`}
                 />
               </button>
               {openIndex === i && (
-                <div className="px-6 py-4 bg-white/[0.02] border-t border-gray-800 animate-fade-in">
-                  <p className="text-gray-500 text-sm leading-relaxed">{faq.answer}</p>
+                <div className="px-6 py-4 bg-purple-600/5 border-t border-purple-600/30 animate-fade-in">
+                  <p className="text-gray-400 text-sm leading-relaxed">{faq.answer}</p>
                 </div>
               )}
             </div>

@@ -5,36 +5,41 @@ const services = [
   {
     id: 1,
     icon: Zap,
-    title: 'Fast Automation',
-    description: '10x faster deployments with intelligent CI/CD.'
+    title: 'Fast Delivery',
+    description: 'Rapid development cycles without compromising quality or design.'
   },
   {
     id: 2,
     icon: Lock,
-    title: 'Security',
-    description: 'Enterprise-grade compliance and threat detection.'
+    title: 'Security First',
+    description: 'Enterprise-grade security and compliance built into every project.'
   },
   {
     id: 3,
     icon: Users,
-    title: 'Collaboration',
-    description: 'Intuitive tools for seamless team workflows.'
+    title: 'Team Collaboration',
+    description: 'Regular updates and collaboration throughout your project lifecycle.'
   },
   {
     id: 4,
     icon: TrendingUp,
-    title: 'Scalability',
-    description: 'Handle millions with 99.99% uptime guarantee.'
+    title: 'Scalable Design',
+    description: 'Solutions built to grow with your business and user base.'
   },
 ];
 
 export function Services() {
   return (
-    <section id="services" className="py-32 bg-black border-t border-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-32 bg-black border-t border-purple-600/20 relative">
+      {/* Background effect */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-5xl sm:text-6xl font-light text-white mb-6 animate-fade-in-up">Solutions</h2>
-          <p className="text-gray-500 text-lg animate-fade-in-up stagger-1">Comprehensive automation for modern teams</p>
+          <h2 className="text-5xl sm:text-6xl font-light text-white mb-6 animate-fade-in-up">Why Choose Us</h2>
+          <p className="text-gray-400 text-lg animate-fade-in-up stagger-1">Excellence in every project we deliver</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -43,15 +48,13 @@ export function Services() {
             return (
               <Card 
                 key={service.id}
-                className="bg-transparent border border-gray-800 hover:border-gray-700 transition-all duration-300 group hover:bg-white/[0.02] animate-fade-in-up overflow-hidden"
+                className="bg-black/40 border border-purple-600/30 hover:border-purple-600/70 transition-all duration-300 group hover:bg-purple-600/10 animate-fade-in-up overflow-hidden"
                 style={{ animationDelay: `${i * 0.08}s` }}
               >
                 <CardContent className="p-6 relative">
-                  <div className="absolute top-0 right-0 w-16 h-16 bg-white/5 rounded-full -mr-8 -mt-8 group-hover:bg-white/10 transition-colors duration-300"></div>
-                  
-                  <Icon className="h-7 w-7 text-gray-500 mb-4 group-hover:text-gray-300 transition-colors duration-200 relative z-10" />
-                  <h3 className="text-base font-semibold text-white mb-2 relative z-10">{service.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed relative z-10">{service.description}</p>
+                  <Icon className="h-7 w-7 text-purple-500 mb-4 group-hover:text-purple-400 transition-colors duration-200" />
+                  <h3 className="text-base font-semibold text-white mb-2">{service.title}</h3>
+                  <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
                 </CardContent>
               </Card>
             );

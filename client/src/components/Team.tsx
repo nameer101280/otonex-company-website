@@ -5,15 +5,20 @@ import founderImage from '@assets/generated_images/professional_developer_headsh
 
 export function Team() {
   return (
-    <section id="team" className="py-24 bg-black border-t border-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl sm:text-6xl font-light text-white mb-4">Our Team</h2>
-          <p className="text-gray-500">Technology experts committed to your success</p>
+    <section id="team" className="py-24 bg-black border-t border-purple-600/20 relative">
+      {/* Background effect */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/2 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-16 animate-fade-in-up">
+          <h2 className="text-4xl sm:text-5xl font-light text-white mb-4">Our Team</h2>
+          <p className="text-gray-400">Experts committed to your success</p>
         </div>
 
-        <div className="max-w-2xl mx-auto animate-fade-in-up">
-          <Card className="overflow-hidden border border-gray-800 bg-transparent">
+        <div className="max-w-2xl mx-auto animate-fade-in-up stagger-1">
+          <Card className="overflow-hidden border border-purple-600/30 hover:border-purple-600/70 bg-black/40 hover:bg-purple-600/10 transition-all duration-300">
             <div className="grid md:grid-cols-2">
               <div className="relative h-full min-h-[400px]">
                 <img
@@ -26,21 +31,21 @@ export function Team() {
               <div>
                 <CardContent className="p-8 space-y-6">
                   <div>
-                    <h3 className="text-2xl font-medium text-white">Nameer Arshad</h3>
-                    <p className="text-gray-500 text-sm mt-1">Founder & Lead Engineer</p>
+                    <h3 className="text-2xl font-semibold text-white">Nameer Arshad</h3>
+                    <p className="text-purple-400 text-sm mt-1">Founder & Lead Engineer</p>
                   </div>
 
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    DevOps and full-stack engineer with 8+ years experience. Specializes in cloud infrastructure, automation, and enterprise solutions. Based in Brussels, Belgium.
+                    Full-stack engineer and DevOps specialist with 8+ years building scalable solutions. Based in Brussels, I specialize in cloud infrastructure, automation, and enterprise applications.
                   </p>
 
-                  <div className="space-y-2 pt-4 border-t border-gray-800">
-                    <h4 className="font-medium text-white text-sm">Key Achievements</h4>
-                    <ul className="space-y-1 text-gray-500 text-sm">
-                      <li>30% improvement in operational efficiency</li>
-                      <li>40% reduction in deployment time</li>
-                      <li>99.8% system uptime maintained</li>
-                      <li>20+ enterprise projects delivered</li>
+                  <div className="space-y-2 pt-4 border-t border-purple-600/30">
+                    <h4 className="font-medium text-white text-sm">Expertise</h4>
+                    <ul className="space-y-1 text-gray-400 text-sm">
+                      <li>Full-stack Web Development (React, Node.js)</li>
+                      <li>Cloud Infrastructure (AWS, Azure, GCP)</li>
+                      <li>DevOps & Automation (CI/CD, Kubernetes)</li>
+                      <li>Mobile App Development (iOS, Android)</li>
                     </ul>
                   </div>
 
@@ -49,7 +54,7 @@ export function Team() {
                       variant="outline" 
                       size="sm" 
                       asChild 
-                      className="border-gray-800 text-gray-400 hover:text-white hover:border-gray-700"
+                      className="border-purple-600/30 text-gray-400 hover:text-purple-400 hover:border-purple-600/70"
                       data-testid="link-founder-linkedin"
                     >
                       <a href="https://linkedin.com/in/nameer-arshad-13a5b620b" target="_blank" rel="noopener noreferrer" className="gap-2">
@@ -61,7 +66,7 @@ export function Team() {
                       variant="outline" 
                       size="sm" 
                       asChild 
-                      className="border-gray-800 text-gray-400 hover:text-white hover:border-gray-700"
+                      className="border-purple-600/30 text-gray-400 hover:text-purple-400 hover:border-purple-600/70"
                       data-testid="link-founder-email"
                     >
                       <a href="mailto:nameerarshad@hotmail.com" className="gap-2">

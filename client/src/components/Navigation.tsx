@@ -33,14 +33,14 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/95 backdrop-blur border-b border-gray-800' : 'bg-transparent'
+        isScrolled ? 'bg-black/90 backdrop-blur border-b border-purple-600/20' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-lg font-semibold text-white hover:text-gray-300 transition-colors duration-200"
+            className="text-lg font-semibold text-white hover:text-purple-400 transition-colors duration-200"
             data-testid="link-logo"
           >
             Autonex
@@ -51,7 +51,7 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                className="text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
                 data-testid={`link-${link.href}`}
               >
                 {link.label}
@@ -59,7 +59,7 @@ export function Navigation() {
             ))}
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-white text-black hover:bg-gray-200 transition-colors duration-200 rounded-sm px-6 py-2 font-medium text-sm"
+              className="bg-purple-600 hover:bg-purple-700 text-white transition-all duration-200 rounded-sm px-6 py-2 font-medium text-sm"
               data-testid="button-cta-book"
             >
               Get Started
@@ -81,13 +81,13 @@ export function Navigation() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-black/95 border-b border-gray-800">
+        <div className="md:hidden bg-black/95 border-b border-purple-600/20">
           <div className="px-4 py-2 space-y-1">
             {navLinks.map((link) => (
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="w-full text-left px-4 py-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+                className="w-full text-left px-4 py-2 text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
                 data-testid={`link-mobile-${link.href}`}
               >
                 {link.label}
@@ -96,7 +96,7 @@ export function Navigation() {
             <div className="px-4 py-2">
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="w-full bg-white text-black hover:bg-gray-200 transition-colors duration-200 rounded-sm font-medium text-sm"
+                className="w-full bg-purple-600 hover:bg-purple-700 text-white transition-all duration-200 rounded-sm font-medium text-sm"
               >
                 Get Started
               </Button>
