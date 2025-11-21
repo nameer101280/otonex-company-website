@@ -17,7 +17,7 @@ export function Contact() {
           </p>
         </div>
 
-        <Card className="mb-12 border-border/50">
+        <Card className="mb-12 border-border/50 animate-fade-in-up">
           <CardContent className="p-8 sm:p-12">
             <div className="space-y-10">
               <div className="text-center space-y-2">
@@ -25,8 +25,8 @@ export function Contact() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="flex items-start gap-4">
-                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-1 group">
+                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0 group-hover:bg-primary/10 transition-colors">
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -41,8 +41,8 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-2 group">
+                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0 group-hover:bg-primary/10 transition-colors">
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -57,8 +57,8 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-3 group">
+                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0 group-hover:bg-primary/10 transition-colors">
                     <MapPin className="h-5 w-5 text-primary" />
                   </div>
                   <div>
@@ -67,8 +67,8 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-4 group">
+                  <div className="p-2.5 bg-primary/5 rounded-lg flex-shrink-0 group-hover:bg-primary/10 transition-colors">
                     <Linkedin className="h-5 w-5 text-primary" />
                   </div>
                   <div>

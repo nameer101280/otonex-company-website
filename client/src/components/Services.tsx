@@ -71,7 +71,7 @@ export function Services() {
             return (
               <Card
                 key={service.id}
-                className="group hover-elevate transition-all duration-300 border-border/40 hover:border-border/60"
+                className={`group hover-elevate transition-all duration-300 border-border/40 hover:border-border/60 animate-fade-in-up stagger-${service.id % 5}`}
                 data-testid={`card-service-${service.id}`}
               >
                 <CardHeader className="space-y-4">

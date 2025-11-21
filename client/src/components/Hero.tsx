@@ -15,7 +15,7 @@ export function Hero() {
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="text-center space-y-10 max-w-4xl mx-auto">
-          <div className="space-y-6">
+          <div className="space-y-6 animate-fade-in-up">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
               Building Tomorrow's{' '}
               <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
@@ -27,44 +27,44 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-2.5">
-            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm">
+          <div className="flex flex-wrap justify-center gap-2.5 animate-fade-in-up stagger-1">
+            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm hover:scale-105 transition-transform duration-300">
               DevOps
             </span>
-            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm">
+            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm hover:scale-105 transition-transform duration-300">
               CI/CD
             </span>
-            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm">
+            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm hover:scale-105 transition-transform duration-300">
               Full-Stack
             </span>
-            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm">
+            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm hover:scale-105 transition-transform duration-300">
               AI Integration
             </span>
-            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm">
+            <span className="px-3.5 py-1.5 bg-muted text-foreground/80 rounded-full text-sm hover:scale-105 transition-transform duration-300">
               Cloud
             </span>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-3 pt-4">
-            <Button onClick={scrollToServices} size="lg" data-testid="button-view-services">
+          <div className="flex flex-wrap justify-center gap-3 pt-4 animate-fade-in-up stagger-2">
+            <Button onClick={scrollToServices} size="lg" data-testid="button-view-services" className="hover:scale-105 transition-transform duration-300">
               View Services
             </Button>
-            <Button variant="outline" size="lg" asChild data-testid="button-contact">
+            <Button variant="outline" size="lg" asChild data-testid="button-contact" className="hover:scale-105 transition-transform duration-300">
               <a href="#contact">Get in Touch</a>
             </Button>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto border-t border-border/50 mt-16">
-            <div className="text-center pt-8">
-              <div className="text-3xl font-bold mb-1.5" data-testid="stat-experience">8+</div>
+          <div className="grid grid-cols-3 gap-8 pt-16 max-w-2xl mx-auto border-t border-border/50 mt-16 animate-fade-in-up stagger-3">
+            <div className="text-center pt-8 group hover:scale-110 transition-transform duration-300 cursor-default">
+              <div className="text-3xl font-bold mb-1.5 group-hover:text-primary transition-colors" data-testid="stat-experience">8+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
-            <div className="text-center pt-8">
-              <div className="text-3xl font-bold mb-1.5" data-testid="stat-projects">50+</div>
+            <div className="text-center pt-8 group hover:scale-110 transition-transform duration-300 cursor-default">
+              <div className="text-3xl font-bold mb-1.5 group-hover:text-primary transition-colors" data-testid="stat-projects">50+</div>
               <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </div>
-            <div className="text-center pt-8">
-              <div className="text-3xl font-bold mb-1.5" data-testid="stat-uptime">99.8%</div>
+            <div className="text-center pt-8 group hover:scale-110 transition-transform duration-300 cursor-default">
+              <div className="text-3xl font-bold mb-1.5 group-hover:text-primary transition-colors" data-testid="stat-uptime">99.8%</div>
               <div className="text-sm text-muted-foreground">System Uptime</div>
             </div>
           </div>

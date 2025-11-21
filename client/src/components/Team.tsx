@@ -15,7 +15,7 @@ export function Team() {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto animate-fade-in-up">
           <Card className="overflow-hidden hover-elevate border-border/50">
             <div className="grid md:grid-cols-2">
               <div className="relative h-full min-h-[400px]">

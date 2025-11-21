@@ -47,10 +47,10 @@ export function About() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <Card className="text-center border-border/50">
+          <Card className="text-center border-border/50 animate-fade-in-up stagger-1">
             <CardContent className="pt-10 pb-10">
               <div className="flex justify-center mb-5">
-                <div className="p-2.5 bg-primary/5 rounded-lg">
+                <div className="p-2.5 bg-primary/5 rounded-lg group hover:bg-primary/10 transition-colors">
                   <Target className="h-6 w-6 text-primary" />
                 </div>
               </div>
@@ -61,10 +61,10 @@ export function About() {
             </CardContent>
           </Card>
 
-          <Card className="text-center border-border/50">
+          <Card className="text-center border-border/50 animate-fade-in-up stagger-2">
             <CardContent className="pt-10 pb-10">
               <div className="flex justify-center mb-5">
-                <div className="p-2.5 bg-primary/5 rounded-lg">
+                <div className="p-2.5 bg-primary/5 rounded-lg group hover:bg-primary/10 transition-colors">
                   <Award className="h-6 w-6 text-primary" />
                 </div>
               </div>
@@ -75,10 +75,10 @@ export function About() {
             </CardContent>
           </Card>
 
-          <Card className="text-center border-border/50">
+          <Card className="text-center border-border/50 animate-fade-in-up stagger-3">
             <CardContent className="pt-10 pb-10">
               <div className="flex justify-center mb-5">
-                <div className="p-2.5 bg-primary/5 rounded-lg">
+                <div className="p-2.5 bg-primary/5 rounded-lg group hover:bg-primary/10 transition-colors">
                   <Users className="h-6 w-6 text-primary" />
                 </div>
               </div>

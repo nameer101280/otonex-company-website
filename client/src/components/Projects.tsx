@@ -81,7 +81,7 @@ export function Projects() {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="group overflow-hidden hover-elevate transition-all duration-300 border-border/50"
+              className={`group overflow-hidden hover-elevate transition-all duration-300 border-border/50 animate-fade-in-up stagger-${project.id % 5}`}
               data-testid={`card-project-${project.id}`}
             >
               <div className="relative overflow-hidden bg-muted">
