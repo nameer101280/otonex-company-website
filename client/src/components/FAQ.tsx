@@ -32,10 +32,10 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-black border-t border-purple-600/20 relative">
+    <section id="faq" className="py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -48,23 +48,23 @@ export function FAQ() {
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="border border-purple-600/30 hover:border-purple-600/70 transition-all duration-300 group hover:bg-purple-600/10 rounded-lg overflow-hidden animate-fade-in-up"
+              className="border border-purple-800/40 hover:border-purple-700/70 transition-all duration-300 group hover:bg-gradient-to-br hover:from-purple-900/20 hover:to-black rounded-lg overflow-hidden animate-fade-in-up"
               style={{ animationDelay: `${i * 0.06}s` }}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full px-6 py-4 flex items-center justify-between hover:bg-purple-600/5 transition-colors duration-200"
+                className="w-full px-6 py-4 flex items-center justify-between hover:bg-purple-900/10 transition-colors duration-200"
                 data-testid={`button-faq-${i}`}
               >
                 <span className="font-medium text-white text-left text-sm">{faq.question}</span>
                 <ChevronDown
-                  className={`h-4 w-4 text-purple-600/70 transition-transform duration-300 flex-shrink-0 ml-2 ${
+                  className={`h-4 w-4 text-purple-700/70 transition-transform duration-300 flex-shrink-0 ml-2 ${
                     openIndex === i ? 'rotate-180 text-purple-500' : ''
                   }`}
                 />
               </button>
               {openIndex === i && (
-                <div className="px-6 py-4 bg-purple-600/5 border-t border-purple-600/30 animate-fade-in">
+                <div className="px-6 py-4 bg-purple-900/10 border-t border-purple-800/40 animate-fade-in">
                   <p className="text-gray-400 text-sm leading-relaxed">{faq.answer}</p>
                 </div>
               )}

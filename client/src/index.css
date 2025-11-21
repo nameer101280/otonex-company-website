@@ -157,7 +157,7 @@ html {
   animation-delay: 0.5s;
 }
 
-/* DARK THEME - Xtract Inspired with Purple Accents */
+/* DARK THEME - Xtract Inspired with Dark Purple Gradient */
 :root {
   --button-outline: rgba(255, 255, 255, 0.08);
   --badge-outline: rgba(255, 255, 255, 0.04);
@@ -173,27 +173,27 @@ html {
   --sidebar: 0 0% 5%;
   --sidebar-foreground: 0 0% 100%;
   --sidebar-border: 0 0% 15%;
-  --sidebar-primary: 270 77% 54%;
+  --sidebar-primary: 270 55% 35%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 0 0% 20%;
   --sidebar-accent-foreground: 0 0% 100%;
-  --sidebar-ring: 270 77% 54%;
+  --sidebar-ring: 270 55% 35%;
   --popover: 0 0% 8%;
   --popover-foreground: 0 0% 100%;
   --popover-border: 0 0% 20%;
-  --primary: 270 77% 54%;
+  --primary: 270 55% 35%;
   --primary-foreground: 0 0% 100%;
   --secondary: 0 0% 12%;
   --secondary-foreground: 0 0% 100%;
   --muted: 0 0% 20%;
   --muted-foreground: 0 0% 60%;
-  --accent: 270 77% 54%;
+  --accent: 270 55% 35%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
   --input: 0 0% 15%;
-  --ring: 270 77% 54%;
-  --chart-1: 270 77% 54%;
+  --ring: 270 55% 35%;
+  --chart-1: 270 55% 35%;
   --chart-2: 173 80% 40%;
   --chart-3: 262 80% 50%;
   --chart-4: 39 84% 55%;
@@ -279,15 +279,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Background effects */
-.bg-gradient-to-br-purple {
-  background: linear-gradient(135deg, rgba(129, 74, 200, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+/* Dark Purple Gradient Utilities */
+.bg-gradient-purple {
+  background: linear-gradient(135deg, #4a1a6f 0%, #2d0a47 100%);
 }
 
-.border-purple-accent {
-  border-color: #814ac8;
+.bg-gradient-purple-subtle {
+  background: linear-gradient(135deg, rgba(74, 26, 111, 0.2) 0%, rgba(45, 10, 71, 0.1) 100%);
 }
 
-.text-purple-accent {
-  color: #814ac8;
+.border-purple-dark {
+  border-color: #5a2a7f;
+}
+
+.text-purple-light {
+  color: #a370d6;
+}
+
+.text-purple-bright {
+  color: #c4a0e0;
 }

@@ -37,10 +37,10 @@ const integrationCategories = [
 
 export function Integrations() {
   return (
-    <section id="integrations" className="py-24 bg-black border-t border-purple-600/20 relative">
+    <section id="integrations" className="py-24 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-1/3 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-gradient-to-b from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -58,7 +58,7 @@ export function Integrations() {
                 {category.items.map((item, itemIdx) => (
                   <Card 
                     key={item.name}
-                    className="bg-black/40 border border-purple-600/30 hover:border-purple-600/70 transition-all duration-300 group hover:bg-purple-600/10 animate-fade-in-up"
+                    className="bg-black/40 border border-purple-800/40 hover:border-purple-700/70 transition-all duration-300 group hover:bg-gradient-to-br hover:from-purple-900/30 hover:to-black animate-fade-in-up"
                     style={{ animationDelay: `${(categoryIdx * 3 + itemIdx) * 0.05 + 0.1}s` }}
                   >
                     <CardContent className="p-4">
@@ -69,7 +69,7 @@ export function Integrations() {
                           </h4>
                           <p className="text-xs text-gray-500 mt-1">{item.description}</p>
                         </div>
-                        <div className="h-2 w-2 rounded-full bg-purple-600/50 group-hover:bg-purple-500 transition-colors duration-200 mt-1 flex-shrink-0"></div>
+                        <div className="h-2 w-2 rounded-full bg-purple-700/50 group-hover:bg-purple-500 transition-colors duration-200 mt-1 flex-shrink-0"></div>
                       </div>
                     </CardContent>
                   </Card>

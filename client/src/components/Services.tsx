@@ -30,10 +30,10 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="py-32 bg-black border-t border-purple-600/20 relative">
+    <section id="services" className="py-32 bg-black border-t border-purple-800/30 relative">
       {/* Background effect */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -48,7 +48,7 @@ export function Services() {
             return (
               <Card 
                 key={service.id}
-                className="bg-black/40 border border-purple-600/30 hover:border-purple-600/70 transition-all duration-300 group hover:bg-purple-600/10 animate-fade-in-up overflow-hidden"
+                className="bg-black/40 border border-purple-800/40 hover:border-purple-700/70 transition-all duration-300 group hover:bg-gradient-to-br hover:from-purple-900/30 hover:to-black animate-fade-in-up overflow-hidden"
                 style={{ animationDelay: `${i * 0.08}s` }}
               >
                 <CardContent className="p-6 relative">
