@@ -111,7 +111,7 @@ export function Contact() {
             Back to Top
           </Button>
           <p className="text-sm text-gray-600">
-            © 2024 Otonex. All rights reserved.
+            © 2024 Autonex. All rights reserved.
           </p>
         </footer>
       </div>

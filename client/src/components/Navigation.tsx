@@ -25,25 +25,25 @@ export function Navigation() {
 
   const navLinks = [
     { label: 'Home', href: 'hero' },
-    { label: 'About', href: 'stats' },
-    { label: 'Services', href: 'services' },
+    { label: 'Services', href: 'specialties' },
+    { label: 'Solutions', href: 'services' },
     { label: 'Team', href: 'team' },
   ];
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/95 backdrop-blur border-b border-white/10' : 'bg-transparent'
+        isScrolled ? 'bg-black/95 backdrop-blur border-b border-cyan-500/20' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-lg font-bold text-white hover:text-purple-400 transition-colors"
+            className="text-lg font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
             data-testid="link-logo"
           >
-            OTONEX
+            AUTONEX
           </button>
 
           <div className="hidden md:flex items-center gap-8">
@@ -51,7 +51,7 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+                className="text-white/80 hover:text-cyan-400 transition-colors text-sm font-medium"
                 data-testid={`link-${link.href}`}
               >
                 {link.label}
@@ -59,10 +59,10 @@ export function Navigation() {
             ))}
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-purple-600 hover:bg-purple-700 text-white rounded-md px-6 py-2"
+              className="bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-90 text-white rounded-md px-6 py-2"
               data-testid="button-cta-book"
             >
-              Book a call
+              Get Started
             </Button>
           </div>
 
@@ -87,7 +87,7 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="w-full text-left px-4 py-2 text-white/80 hover:text-white transition-colors text-sm font-medium"
+                className="w-full text-left px-4 py-2 text-white/80 hover:text-cyan-400 transition-colors text-sm font-medium"
                 data-testid={`link-mobile-${link.href}`}
               >
                 {link.label}
@@ -96,9 +96,9 @@ export function Navigation() {
             <div className="px-4 py-2">
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white rounded-md"
+                className="w-full bg-gradient-to-r from-purple-600 to-cyan-600 text-white rounded-md"
               >
-                Book a call
+                Get Started
               </Button>
             </div>
           </div>
