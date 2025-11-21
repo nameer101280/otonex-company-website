@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sohne:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,6 +100,15 @@ html {
   }
 }
 
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5), 0 0 40px rgba(168, 85, 247, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(168, 85, 247, 0.8), 0 0 60px rgba(168, 85, 247, 0.5);
+  }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
@@ -134,6 +145,10 @@ html {
 .animate-gradient-shift {
   animation: gradientShift 4s ease infinite;
   background-size: 200% 200%;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
 }
 
 /* Stagger animations */
@@ -198,9 +213,9 @@ html {
   --chart-3: 262 80% 50%;
   --chart-4: 39 84% 55%;
   --chart-5: 0 84% 60%;
-  --font-sans: "Figtree", system-ui, sans-serif;
+  --font-sans: "Sohne", system-ui, sans-serif;
   --font-serif: Georgia, serif;
-  --font-mono: "Fira Code", monospace;
+  --font-mono: "Space Grotesk", monospace;
   --radius: 0px;
   --shadow-2xs: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
   --shadow-xs: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
@@ -232,11 +247,11 @@ html {
 body {
   background-color: #000000;
   color: #ffffff;
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: "Sohne", system-ui, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Figtree", system-ui, sans-serif;
+  font-family: "Space Grotesk", system-ui, sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -298,4 +313,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-purple-bright {
   color: #c4a0e0;
+}
+
+/* Brand logo styling */
+.brand-logo {
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  letter-spacing: -0.03em;
+  background: linear-gradient(120deg, #c4a0e0 0%, #a370d6 50%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-logo:hover {
+  animation: pulse-glow 2s ease-in-out infinite;
 }

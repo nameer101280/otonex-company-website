@@ -37,13 +37,13 @@ export function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           <button
             onClick={() => scrollToSection('hero')}
-            className="text-lg font-semibold text-white hover:text-purple-400 transition-colors duration-200"
+            className="brand-logo text-2xl hover:opacity-80 transition-opacity duration-200"
             data-testid="link-logo"
           >
-            Autonex
+            AUTONEX
           </button>
 
           <div className="hidden md:flex items-center gap-12">
@@ -51,7 +51,7 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
+                className="text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm font-medium"
                 data-testid={`link-${link.href}`}
               >
                 {link.label}
@@ -87,7 +87,7 @@ export function Navigation() {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="w-full text-left px-4 py-2 text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
+                className="w-full text-left px-4 py-2 text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm font-medium"
                 data-testid={`link-mobile-${link.href}`}
               >
                 {link.label}

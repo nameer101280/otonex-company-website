@@ -19,20 +19,23 @@ export function Hero() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div className="text-center space-y-8 max-w-4xl mx-auto">
-          <div className="space-y-6">
-            <p className="text-sm text-gray-400 animate-fade-in-up font-light">Enterprise solutions built with precision</p>
+        <div className="text-center space-y-8 max-w-5xl mx-auto">
+          <div className="space-y-8">
+            <div className="animate-fade-in-up">
+              <h2 className="text-sm text-gray-500 font-medium tracking-widest uppercase mb-6">Premium Technology Solutions</h2>
+              <h1 className="text-7xl sm:text-8xl lg:text-9xl font-bold tracking-tight leading-none mb-6">
+                <span className="text-white">Build the</span>
+                <br />
+                <span className="brand-logo block mt-4 animate-pulse-glow">Future</span>
+              </h1>
+            </div>
             
-            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-light tracking-tight leading-tight text-white animate-fade-in-up stagger-1">
-              Transform Your <span className="bg-gradient-to-r from-purple-400 to-purple-300 bg-clip-text text-transparent font-semibold">Ideas</span> into Reality
-            </h1>
-            
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto animate-fade-in-up stagger-2 font-light">
+            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto animate-fade-in-up stagger-1 font-light">
               Web applications, mobile apps, and intelligent automation. We build scalable solutions that drive your business forward.
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6 animate-fade-in-up stagger-3">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6 animate-fade-in-up stagger-2">
             <Button 
               onClick={() => scrollToSection('specialties')}
               className="bg-gradient-to-r from-purple-700 to-purple-900 hover:from-purple-600 hover:to-purple-800 text-white transition-all duration-300 rounded-sm px-8 py-3 text-sm font-medium shadow-lg hover:shadow-purple-900/50"
@@ -50,8 +53,8 @@ export function Hero() {
             </Button>
           </div>
 
-          <div className="pt-8 animate-fade-in-up stagger-4">
-            <p className="text-xs text-gray-600 mb-4">Trusted by leading enterprises</p>
+          <div className="pt-8 animate-fade-in-up stagger-3">
+            <p className="text-xs text-gray-600 mb-4 font-medium">Trusted by leading enterprises</p>
             <div className="flex flex-wrap justify-center gap-3">
               {['AWS', 'Azure', 'React', 'Node.js', 'Kubernetes', 'PostgreSQL'].map((tech, i) => (
                 <span 
@@ -66,7 +69,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in-up stagger-5">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in-up stagger-4">
           <button
             onClick={() => scrollToSection('specialties')}
             className="text-purple-700/70 hover:text-purple-600 transition-colors duration-300 animate-bounce"
