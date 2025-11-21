@@ -22,16 +22,20 @@ export function Hero() {
         <div className="text-center space-y-8 max-w-5xl mx-auto">
           <div className="space-y-8">
             <div className="animate-fade-in-up">
-              <h2 className="text-sm text-gray-500 font-medium tracking-widest uppercase mb-6">From Concept to Enterprise Scale</h2>
-              <h1 className="text-7xl sm:text-8xl lg:text-9xl font-bold tracking-tight leading-none mb-6">
-                <span className="text-white">Scale Your</span>
+              <h2 className="text-sm text-gray-500 font-medium tracking-widest uppercase mb-6">
+                🚀 Your Growth Partner
+              </h2>
+              <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
+                <span className="text-white">We Build Products That</span>
                 <br />
-                <span className="brand-logo block mt-4 animate-pulse-glow">Business</span>
+                <span className="brand-logo block mt-2 animate-pulse-glow text-7xl sm:text-8xl lg:text-9xl">
+                  Drive Revenue
+                </span>
               </h1>
             </div>
             
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto animate-fade-in-up stagger-1 font-light">
-              Custom web applications, mobile apps, and intelligent automation designed to accelerate growth and transform your operations.
+              Not just beautiful code. Custom web applications, mobile apps, and intelligent automation that turn your biggest ideas into profitable products. Launch in weeks, not months.
             </p>
           </div>
 
@@ -41,7 +45,7 @@ export function Hero() {
               className="bg-gradient-to-r from-purple-700 to-purple-900 hover:from-purple-600 hover:to-purple-800 text-white transition-all duration-300 rounded-sm px-8 py-3 text-sm font-medium shadow-lg hover:shadow-purple-900/50"
               data-testid="button-cta-explore"
             >
-              Explore Services
+              Book an Intro Call
             </Button>
             <Button 
               variant="outline" 
@@ -49,14 +53,14 @@ export function Hero() {
               className="border border-purple-700/50 text-purple-300 hover:bg-purple-900/20 transition-all duration-300 rounded-sm px-8 py-3 text-sm font-medium"
               data-testid="button-cta-contact"
             >
-              Schedule Demo
+              View Our Work
             </Button>
           </div>
 
           <div className="pt-8 animate-fade-in-up stagger-3">
-            <p className="text-xs text-gray-600 mb-4 font-medium">Trusted by leading enterprises</p>
+            <p className="text-xs text-gray-600 mb-4 font-medium">Trusted by 50+ ambitious founders building market leaders</p>
             <div className="flex flex-wrap justify-center gap-3">
-              {['AWS', 'Azure', 'React', 'Node.js', 'Kubernetes', 'PostgreSQL'].map((tech, i) => (
+              {['AWS', 'React', 'Node.js', 'Mobile Apps', 'Automation', 'Scale'].map((tech, i) => (
                 <span 
                   key={tech} 
                   className="px-3 py-1.5 text-gray-500 text-xs border border-purple-800/50 hover:border-purple-700/80 transition-colors duration-300 rounded-sm font-medium animate-fade-in-up"

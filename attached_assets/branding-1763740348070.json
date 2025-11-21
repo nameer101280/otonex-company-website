@@ -1,0 +1,100 @@
+{
+  "colorScheme": "dark",
+  "fonts": [
+    {
+      "family": "Haffer",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#342111",
+    "accent": "#BDBDBD",
+    "background": "#0D0E15",
+    "textPrimary": "#0D0E15",
+    "link": "#9CA3AF"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Haffer",
+      "heading": "Haffer"
+    },
+    "fontStacks": {
+      "heading": [
+        "Haffer"
+      ],
+      "body": [
+        "Haffer"
+      ],
+      "paragraph": [
+        "Haffer"
+      ]
+    },
+    "fontSizes": {
+      "h1": "61px",
+      "h2": "49px",
+      "body": "12px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "10px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "10px"
+    },
+    "buttonPrimary": {
+      "background": "#BDBDBD",
+      "textColor": "#342111",
+      "borderColor": "#FFFFFF",
+      "borderRadius": "60px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "transparent",
+      "textColor": "#AAAAAA",
+      "borderColor": "#25262C",
+      "borderRadius": "60px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "File saved at: attached_assets/favicon.png",
+    "ogImage": "https://devtrox.com/images/og-image.png"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 visually represents the brand name 'Devtrox' and is located in the header, linking to the homepage, making it the most suitable choice for the brand logo.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Book an Intro Call",
+      "reasoning": "Button #0 ('Book an Intro Call') has a neutral background color (#BDBDBD) but is the only button with action-oriented text that suggests a primary call-to-action. It is also visually prominent compared to the transparent button."
+    },
+    "secondary": {
+      "index": 2,
+      "text": "View Portfolio",
+      "reasoning": "Button #2 ('View Portfolio') has a transparent background, making it less prominent and suitable as a secondary action. It is from a different color group than the primary button."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "business professionals and clients seeking web development services"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.95,
+    "overall": 0.925
+  }
+}
