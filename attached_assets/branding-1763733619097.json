@@ -1,0 +1,131 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "LayGrotesk",
+      "role": "body"
+    },
+    {
+      "family": "Geist",
+      "role": "body"
+    },
+    {
+      "family": "FT System Mono",
+      "role": "monospace"
+    },
+    {
+      "family": "Geist Mono",
+      "role": "monospace"
+    }
+  ],
+  "colors": {
+    "primary": "#FF8067",
+    "accent": "#0A0C0C",
+    "background": "#FFFFFF",
+    "textPrimary": "#0A0C0C",
+    "link": "#A19CC8"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "LayGrotesk",
+      "heading": "LayGrotesk"
+    },
+    "fontStacks": {
+      "heading": [
+        "LayGrotesk",
+        "Geist",
+        "system-ui",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji"
+      ],
+      "body": [
+        "LayGrotesk",
+        "Geist",
+        "system-ui",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji"
+      ],
+      "paragraph": [
+        "LayGrotesk",
+        "Geist",
+        "system-ui",
+        "sans-serif",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji"
+      ]
+    },
+    "fontSizes": {
+      "h1": "68px",
+      "h2": "18px",
+      "body": "12px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 8,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "0px"
+    },
+    "buttonPrimary": {
+      "background": "#0A0C0C",
+      "textColor": "#FFFFFF",
+      "borderRadius": "33554400px",
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#F5F5F5",
+      "textColor": "#0A0C0C",
+      "borderRadius": "33554400px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "File saved at: attached_assets/favicon.png",
+    "ogImage": "/_next/static/media/OpenGraph.37da9236.jpg"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Logo #0 is a visible SVG logo in the header that matches the brand name 'Coder' and links to the homepage, making it the most suitable choice for the brand logo.",
+    "confidence": 0.95
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 3,
+      "text": "Install Coder",
+      "reasoning": "Button #3 ('Install Coder') has a dark background color (#0A0C0C) which is distinct and vibrant compared to the other buttons. It also has a clear action-oriented text, making it the primary call-to-action."
+    },
+    "secondary": {
+      "index": 0,
+      "text": "Get a demo",
+      "reasoning": "Button #0 ('Get a demo') has a light background color (#F5F5F5) which is different from the primary button's dark color. It is less prominent but still serves as a valid secondary action."
+    },
+    "confidence": 0.9
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "developers and tech professionals"
+  },
+  "designSystem": {
+    "framework": "tailwind",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.9,
+    "colors": 0.95,
+    "overall": 0.925
+  }
+}

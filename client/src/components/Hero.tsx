@@ -10,20 +10,20 @@ export function Hero() {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center pt-16 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.02] via-background to-background"></div>
+    <section id="hero" className="min-h-screen flex items-center pt-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-background"></div>
       
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div className="text-center space-y-10 max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+        <div className="text-center space-y-8 max-w-4xl mx-auto">
           <div className="space-y-6 animate-fade-in-up">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
-              Building Tomorrow's{' '}
-              <span className="bg-gradient-to-r from-primary via-primary to-primary/70 bg-clip-text text-transparent">
-                Digital Infrastructure
+            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-tight text-foreground">
+              Cloud-native solutions{' '}
+              <span className="text-primary">
+                for modern teams.
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              DevOps automation, full-stack development, AI integration, and cloud solutions that scale with your business.
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-normal">
+              DevOps automation, full-stack development, and AI-powered infrastructure that scales with your ambition.
             </p>
           </div>
 
@@ -45,12 +45,12 @@ export function Hero() {
             </span>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-3 pt-4 animate-fade-in-up stagger-2">
-            <Button onClick={scrollToServices} size="lg" data-testid="button-view-services" className="hover:scale-105 transition-transform duration-300">
-              View Services
+          <div className="flex flex-wrap justify-center gap-4 pt-2 animate-fade-in-up stagger-2">
+            <Button onClick={scrollToServices} size="lg" data-testid="button-view-services" className="rounded-full px-8 font-medium hover:scale-105 transition-all duration-300">
+              Explore Services
             </Button>
-            <Button variant="outline" size="lg" asChild data-testid="button-contact" className="hover:scale-105 transition-transform duration-300">
-              <a href="#contact">Get in Touch</a>
+            <Button variant="outline" size="lg" asChild data-testid="button-contact" className="rounded-full px-8 font-medium hover:scale-105 transition-all duration-300">
+              <a href="#contact">Schedule Demo</a>
             </Button>
           </div>
 

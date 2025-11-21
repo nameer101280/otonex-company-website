@@ -1,132 +1,143 @@
 # CloudForge Solutions - Design Guidelines
 
 ## Design Philosophy
-**Minimal • Modern • Professional**
+**Bold • Modern • Premium**
 
-A clean, minimal aesthetic that emphasizes clarity and professionalism. Inspired by contemporary SaaS and B2B tech companies with focus on readability, generous whitespace, and subtle visual hierarchy.
+A bold, professional aesthetic inspired by leading SaaS platforms like Coder and Linear. Emphasizes large, impactful typography, clean layouts, and generous whitespace. Focus on readability, clear hierarchy, and a premium developer-first experience.
+
+## Color Palette
+**Primary Brand:**
+- Primary Color: #2563EB (Vibrant Professional Blue) - Used for CTAs, key highlights
+- Dark Accent: #0F172A (Deep Navy/Charcoal) - For headers and strong text
+- Background: #FFFFFF (Clean white)
+- Text Primary: #0F172A (Deep Navy)
+- Text Secondary: #64748B (Slate Gray)
+- Text Tertiary: #94A3B8 (Muted Slate)
+
+**Supporting Colors:**
+- Success: #10B981 (Emerald)
+- Warning: #F59E0B (Amber)
+- Error: #EF4444 (Red)
+- Neutral backgrounds: #F8FAFC (Very light gray)
+- Card backgrounds: #FFFFFF (White with subtle border)
 
 ## Typography
 **Font Families:**
-- Headlines: Space Grotesk (Bold/Semibold) - Modern, technical aesthetic
-- Body: Inter (Regular/Medium) - Clean, highly readable
-- Code/Technical: Fira Code (for technical references)
+- Headlines: Geist or System UI (Bold/Semibold) - Modern, technical, bold weight
+- Body: Geist or System UI (Regular/Medium) - Clean, highly readable
+- Code/Technical: Geist Mono or Fira Code
 
 **Hierarchy:**
-- Hero headline: text-5xl to text-7xl (desktop), text-4xl (mobile)
-- Section headers: text-4xl to text-5xl
-- Service titles: text-2xl to text-3xl
-- Body text: text-base to text-lg
-- Captions: text-sm
+- Hero headline (h1): text-6xl to text-7xl, font-bold, tracking-tight
+- Section headers (h2): text-4xl to text-5xl, font-bold
+- Subsections (h3): text-2xl to text-3xl, font-semibold
+- Body text: text-base to text-lg, font-normal
+- Captions: text-sm, font-normal
 
 **Character:**
-- Tight letter spacing for headlines (tracking-tight)
-- Medium weight for emphasis without heaviness
-- Generous line height for readability (leading-relaxed)
-
-## Color Palette
-**Neutral Foundation:**
-- Light mode: Clean whites and soft grays
-- Dark mode: Deep slate with subtle blue undertones
-- Minimal use of color - only for primary actions and key highlights
-
-**Accent Usage:**
-- Primary: Used sparingly for CTAs and key metrics
-- Muted backgrounds for cards and sections
-- High contrast for accessibility
-- Subtle gradients only in hero section
+- Headlines: Bold weight (700), tight tracking, commanding presence
+- Body: Regular weight (400), generous line height (1.6+)
+- All text must have excellent contrast
 
 ## Layout System
-**Spacing Philosophy:** Generous whitespace, breathing room between elements
-- Section padding: py-20 to py-32 (ample vertical space)
-- Max-width: max-w-7xl for content, max-w-4xl for text-heavy sections
-- Grid gaps: gap-8 to gap-12 for comfortable separation
-- Component internal padding: Consistent across all cards/sections
+**Spacing Philosophy:** Generous whitespace, premium breathing room
+- Section padding: py-24 to py-32 (very ample vertical space)
+- Hero section: Extra tall with large text
+- Max-width: max-w-7xl for wide layouts, max-w-5xl for content
+- Grid gaps: gap-8 to gap-12
+- Component padding: Consistent, spacious
 
-**Responsive Breakpoints:**
-- Mobile-first approach
-- Single column on mobile, 2-3 columns on desktop
-- Flexible grids that adapt gracefully
+**Button Style:**
+- Border radius: Fully rounded (rounded-full) - pill-shaped
+- Padding: px-8 py-3 (generous)
+- Font weight: Medium to semi-bold
+- Primary: Dark background (#2563EB or #0F172A) with white text
+- Secondary: Light gray background with dark text, or outline
+- No borders except on outline variants
 
-## Core Components
+**Card Style:**
+- Minimal borders: Very subtle gray border (border-border/30)
+- No heavy shadows
+- Rounded corners: rounded-lg (standard)
+- Background: White or very light gray
+- Hover: Subtle lift and light background change
+
+## Core Sections
 
 ### Hero Section
-Centered, text-focused design:
-- Large, bold headline with gradient accent on key words
-- Concise value proposition (1-2 sentences)
-- Service tags as pills/badges
-- Dual CTAs (primary + outline)
-- Key statistics grid (3 columns)
-- Minimal decorative elements - focus on typography
+Commanding, text-first design:
+- Very large headline (60-72px), bold, centered
+- Short subheading (2-3 sentences max)
+- Dual CTAs with pill-shaped buttons
+- Optional: Hero visual/image below
+- Key stats in a grid below (optional)
+- Maximum focus on clear value proposition
 
-### Services Section
-Grid of service cards (3 columns desktop, 1 mobile):
-- Icon in subtle background circle
-- Service name and description
-- Feature list with checkmarks
-- Small badge highlighting key benefit
-- Subtle hover effect (lift/shadow)
-- No heavy borders - rely on background contrast
+### Services/Features Section
+Feature cards or simple list:
+- Grid layout with breathing room
+- Icons on left or top (minimal style)
+- Bold service name
+- Clear description
+- Feature list with minimal bullets
+- Hover state: very subtle (slight background change, no lift)
 
-### About Section
-Two-column layout (image + content):
-- Clean image presentation with subtle rounding
-- Mission/expertise/approach in 3-card grid
-- Icons to represent each pillar
-- Text-focused with ample spacing
+### Integrations Section
+Showcase of partners and tech:
+- Large "Integrations" or "Works with" header
+- Grid of partner logos (3-4 columns)
+- High-quality, consistent-sized logos
+- Optional grouped by category
+- Clean, minimal presentation
 
-### Team Section
-Featured team member card:
-- Split layout: image + bio/achievements
-- Professional photo
-- Achievement highlights with bullet points
-- Contact links (LinkedIn, email)
-- Credentials section
-
-### Projects Section
-Grid showcase (2-3 columns):
-- Large project images
-- Minimal text overlay or below
-- Technology tags
-- Clean, consistent card structure
+### Success Stories/Case Studies
+Featured customer wins:
+- Client logo
+- Metric/result (bold, large)
+- Brief description
+- Link to full case study
+- Minimal card design
 
 ### Contact Section
-Centered, organized information:
-- Contact methods in 2-column grid
-- Icons for each contact method
-- Primary CTA for consultation
-- Footer with copyright
+Simple, centered:
+- Call-to-action text
+- Contact methods (email, phone, etc.)
+- Social links
+- Optional: contact form
 
 ## Navigation
 Minimal sticky header:
-- Company name (left)
-- Nav links (right) - horizontal spacing
-- Theme toggle
-- Semi-transparent backdrop with blur on scroll
-- No visible border - use subtle shadow or background
+- Logo/company name (left)
+- Nav links (center or right)
+- CTA button (right)
+- Semi-transparent background on scroll
+- No heavy styling - very clean
 
 ## Visual Elements
-**Minimalism Guidelines:**
-- Avoid heavy shadows - use subtle elevation only
-- Rounded corners: rounded-lg (consistent)
-- Icons: Outline style, not filled
-- No busy patterns or textures
-- Generous negative space
-- Subtle hover states (slight lift, no color change)
+**Design Principles:**
+- Bold, readable typography is the hero
+- Generous whitespace throughout
+- Minimal illustrations or icons
+- High-quality images only
+- Subtle hover states
+- Strong hierarchy through size and weight, not color
+
+**What TO do:**
+- Bold, large headlines
+- Clean, readable body text
+- Pill-shaped buttons
+- Generous spacing
+- Professional photos/illustrations
+- Strong contrast for readability
+- Subtle animations on scroll
 
 **What NOT to do:**
-- Heavy drop shadows
-- Multiple bright colors
-- Dense layouts
-- Decorative illustrations
+- Small, cramped text
+- Too many colors
+- Heavy shadows
+- Decorative elements
 - Busy backgrounds
-- Excessive gradients
-
-## Images
-- High-quality professional photos
-- Consistent treatment (rounded corners)
-- Proper aspect ratios
-- No filters or heavy processing
-- Clean, professional aesthetic
+- Rounded corners on text elements
 
 ## Overall Aesthetic
-Clean, minimal, professional with modern sophistication. Think: Linear, Vercel, Stripe - companies that use whitespace effectively and let content breathe. Every element should have a purpose. Remove anything that doesn't add value.
+Premium, modern, bold. Think Coder, Linear, Vercel - companies with confident typography, plenty of whitespace, and a clear developer-first focus. Every element serves a purpose. Typography and clear communication are the primary design tools.
