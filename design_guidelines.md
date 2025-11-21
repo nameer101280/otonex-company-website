@@ -1,4 +1,4 @@
-# CloudForge Solutions - Design Guidelines
+# Autonex - Design Guidelines
 
 ## Design Philosophy
 **Bold • Modern • Premium**

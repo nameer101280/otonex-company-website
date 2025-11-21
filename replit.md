@@ -1,10 +1,10 @@
-# CloudForge Solutions - Company Website
+# Autonex - Company Website
 
 ## Overview
-Professional company website for CloudForge Solutions, a DevOps automation and full-stack development consultancy based in Brussels, Belgium.
+Professional company website for Autonex, a DevOps automation and full-stack development consultancy based in Brussels, Belgium.
 
 ## Company Information
-- **Name**: CloudForge Solutions (example name - can be customized)
+- **Name**: Autonex
 - **Founder**: Nameer Arshad
 - **Location**: Brussels, Belgium
 - **Services**: DevOps Automation, Full-Stack Development, Cloud Infrastructure, AI Integration, Database Optimization, Web Design

@@ -7,7 +7,7 @@ export function About() {
     <section id="about" className="py-20 sm:py-32 bg-muted/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display tracking-tight">About CloudForge Solutions</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display tracking-tight">About Autonex</h2>
           <p className="text-lg text-muted-foreground">
             Your trusted partner in modern DevOps and cloud transformation
           </p>
@@ -17,7 +17,7 @@ export function About() {
           <div>
             <img
               src={aboutImage}
-              alt="CloudForge workspace"
+              alt="Autonex workspace"
               className="rounded-2xl w-full h-auto object-cover shadow-lg"
               data-testid="img-about"
             />
@@ -26,7 +26,7 @@ export function About() {
           <div className="space-y-6">
             <div className="prose prose-lg max-w-none">
               <p className="text-foreground/80 leading-relaxed">
-                CloudForge Solutions specializes in DevOps automation, full-stack development, and 
+                Autonex specializes in DevOps automation, full-stack development, and 
                 cloud infrastructure solutions. We help businesses modernize their IT operations, 
                 streamline deployment processes, and build scalable applications that drive growth.
               </p>
