@@ -22,16 +22,16 @@ export function Hero() {
         <div className="text-center space-y-8 max-w-5xl mx-auto">
           <div className="space-y-8">
             <div className="animate-fade-in-up">
-              <h2 className="text-sm text-gray-500 font-medium tracking-widest uppercase mb-6">Premium Technology Solutions</h2>
+              <h2 className="text-sm text-gray-500 font-medium tracking-widest uppercase mb-6">From Concept to Enterprise Scale</h2>
               <h1 className="text-7xl sm:text-8xl lg:text-9xl font-bold tracking-tight leading-none mb-6">
-                <span className="text-white">Build the</span>
+                <span className="text-white">Scale Your</span>
                 <br />
-                <span className="brand-logo block mt-4 animate-pulse-glow">Future</span>
+                <span className="brand-logo block mt-4 animate-pulse-glow">Business</span>
               </h1>
             </div>
             
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto animate-fade-in-up stagger-1 font-light">
-              Web applications, mobile apps, and intelligent automation. We build scalable solutions that drive your business forward.
+              Custom web applications, mobile apps, and intelligent automation designed to accelerate growth and transform your operations.
             </p>
           </div>
 
