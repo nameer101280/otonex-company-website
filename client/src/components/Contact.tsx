@@ -10,12 +10,12 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 bg-black border-t border-gray-900">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl sm:text-6xl font-light text-white mb-4">Let's Work Together</h2>
-          <p className="text-gray-500">Ready to transform your infrastructure?</p>
+          <p className="text-gray-500 animate-fade-in-up stagger-1">Ready to transform your infrastructure?</p>
         </div>
 
-        <Card className="mb-12 border border-gray-800 bg-transparent animate-fade-in-up">
+        <Card className="mb-12 border border-gray-800 bg-transparent animate-fade-in-up stagger-2">
           <CardContent className="p-8 sm:p-12">
             <div className="space-y-10">
               <div className="text-center space-y-2">
@@ -23,7 +23,7 @@ export function Contact() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-1">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-3">
                   <Mail className="h-5 w-5 text-gray-600 mt-0.5" />
                   <div>
                     <h4 className="font-medium text-white text-sm mb-1">Email</h4>
@@ -37,7 +37,7 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-2">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-4">
                   <Phone className="h-5 w-5 text-gray-600 mt-0.5" />
                   <div>
                     <h4 className="font-medium text-white text-sm mb-1">Phone</h4>
@@ -51,7 +51,7 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-3">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-5">
                   <MapPin className="h-5 w-5 text-gray-600 mt-0.5" />
                   <div>
                     <h4 className="font-medium text-white text-sm mb-1">Location</h4>
@@ -59,7 +59,7 @@ export function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-4">
+                <div className="flex items-start gap-4 animate-fade-in-up stagger-1">
                   <Linkedin className="h-5 w-5 text-gray-600 mt-0.5" />
                   <div>
                     <h4 className="font-medium text-white text-sm mb-1">LinkedIn</h4>
@@ -76,7 +76,7 @@ export function Contact() {
                 </div>
               </div>
 
-              <div className="pt-6 border-t border-gray-800 text-center">
+              <div className="pt-6 border-t border-gray-800 text-center animate-fade-in-up stagger-2">
                 <p className="text-gray-500 text-sm mb-4">
                   Let's discuss your project and how we can help.
                 </p>
@@ -90,7 +90,7 @@ export function Contact() {
           </CardContent>
         </Card>
 
-        <footer className="text-center space-y-4">
+        <footer className="text-center space-y-4 animate-fade-in-up stagger-3">
           <Button
             variant="ghost"
             onClick={scrollToTop}

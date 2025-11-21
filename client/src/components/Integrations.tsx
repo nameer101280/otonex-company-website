@@ -19,16 +19,18 @@ export function Integrations() {
   return (
     <section id="integrations" className="py-24 bg-black border-t border-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl sm:text-6xl font-light text-white mb-4">Integrations</h2>
-          <p className="text-gray-500">Works with your entire stack</p>
+          <p className="text-gray-500 animate-fade-in-up stagger-1">Works with your entire stack</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {integrations.map((integration) => (
+          {integrations.map((integration, i) => (
             <Card 
               key={integration.name}
-              className="bg-transparent border border-gray-800 hover:border-gray-700 transition-colors duration-300"
+              className={`bg-transparent border border-gray-800 hover:border-gray-700 transition-all duration-300 animate-fade-in-up ${
+                i === 0 ? '' : `stagger-${(i % 5) + 1}`
+              }`}
             >
               <CardContent className="flex flex-col items-center justify-center py-8">
                 <div className="text-4xl mb-2">{integration.icon}</div>

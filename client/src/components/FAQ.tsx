@@ -30,17 +30,18 @@ export function FAQ() {
   return (
     <section id="faq" className="py-24 bg-black border-t border-gray-900">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl sm:text-6xl font-light text-white mb-4">Questions</h2>
-          <p className="text-gray-500">Common questions answered</p>
+          <p className="text-gray-500 animate-fade-in-up stagger-1">Common questions answered</p>
         </div>
 
         <div className="space-y-2">
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className="border border-gray-800 hover:border-gray-700 transition-colors duration-300 animate-fade-in-up"
-              style={{ animationDelay: `${i * 0.05}s` }}
+              className={`border border-gray-800 hover:border-gray-700 transition-colors duration-300 animate-fade-in-up ${
+                i === 0 ? '' : `stagger-${i + 1}`
+              }`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
@@ -55,7 +56,7 @@ export function FAQ() {
                 />
               </button>
               {openIndex === i && (
-                <div className="px-6 py-4 bg-white/[0.02] border-t border-gray-800">
+                <div className="px-6 py-4 bg-white/[0.02] border-t border-gray-800 animate-fade-in">
                   <p className="text-gray-500 text-sm leading-relaxed">{faq.answer}</p>
                 </div>
               )}

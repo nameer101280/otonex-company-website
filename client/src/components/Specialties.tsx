@@ -35,7 +35,7 @@ export function Specialties() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-5xl sm:text-6xl font-light text-white mb-4">Core Specialties</h2>
-          <p className="text-gray-500">End-to-end solutions across the technology stack</p>
+          <p className="text-gray-500 animate-fade-in-up stagger-1">End-to-end solutions across the technology stack</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -44,8 +44,9 @@ export function Specialties() {
             return (
               <Card 
                 key={i}
-                className="bg-transparent border border-gray-800 hover:border-gray-700 transition-all duration-300 group animate-fade-in-up"
-                style={{ animationDelay: `${i * 0.05}s` }}
+                className={`bg-transparent border border-gray-800 hover:border-gray-700 transition-all duration-300 group animate-fade-in-up ${
+                  i === 0 ? '' : `stagger-${(i % 5) + 1}`
+                }`}
               >
                 <CardContent className="p-6 flex flex-col h-full">
                   <Icon className="h-6 w-6 text-gray-400 mb-4 group-hover:text-white transition-colors duration-200" />
