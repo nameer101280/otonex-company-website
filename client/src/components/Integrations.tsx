@@ -1,5 +1,3 @@
-import { Cloud } from 'lucide-react';
-
 const integrations = [
   { name: 'AWS', icon: '☁️' },
   { name: 'Google Cloud', icon: '☁️' },
