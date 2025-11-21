@@ -4,10 +4,10 @@ import aboutImage from '@assets/generated_images/developer_casual_workspace_scen
 
 export function About() {
   return (
-    <section id="about" className="py-20 sm:py-32 bg-muted/30">
+    <section id="about" className="py-20 sm:py-32 bg-muted/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display">About CloudForge Solutions</h2>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display tracking-tight">About CloudForge Solutions</h2>
           <p className="text-lg text-muted-foreground">
             Your trusted partner in modern DevOps and cloud transformation
           </p>
@@ -46,44 +46,44 @@ export function About() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <Card className="text-center">
-            <CardContent className="pt-8 pb-8">
-              <div className="flex justify-center mb-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
-                  <Target className="h-8 w-8 text-primary" />
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="text-center border-border/50">
+            <CardContent className="pt-10 pb-10">
+              <div className="flex justify-center mb-5">
+                <div className="p-2.5 bg-primary/5 rounded-lg">
+                  <Target className="h-6 w-6 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Our Mission</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg font-semibold mb-2.5 tracking-tight">Our Mission</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Empower businesses with cutting-edge DevOps practices and cloud-native solutions that accelerate innovation.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="text-center">
-            <CardContent className="pt-8 pb-8">
-              <div className="flex justify-center mb-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
-                  <Award className="h-8 w-8 text-primary" />
+          <Card className="text-center border-border/50">
+            <CardContent className="pt-10 pb-10">
+              <div className="flex justify-center mb-5">
+                <div className="p-2.5 bg-primary/5 rounded-lg">
+                  <Award className="h-6 w-6 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Our Expertise</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg font-semibold mb-2.5 tracking-tight">Our Expertise</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Deep technical knowledge in DevOps automation, cloud infrastructure, and full-stack development.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="text-center">
-            <CardContent className="pt-8 pb-8">
-              <div className="flex justify-center mb-4">
-                <div className="p-3 bg-primary/10 rounded-lg">
-                  <Users className="h-8 w-8 text-primary" />
+          <Card className="text-center border-border/50">
+            <CardContent className="pt-10 pb-10">
+              <div className="flex justify-center mb-5">
+                <div className="p-2.5 bg-primary/5 rounded-lg">
+                  <Users className="h-6 w-6 text-primary" />
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">Our Approach</h3>
-              <p className="text-muted-foreground">
+              <h3 className="text-lg font-semibold mb-2.5 tracking-tight">Our Approach</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 Client-focused solutions with agile methodologies, ensuring timely delivery and measurable results.
               </p>
             </CardContent>

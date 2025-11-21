@@ -6,17 +6,17 @@ import founderImage from '@assets/generated_images/professional_developer_headsh
 
 export function Team() {
   return (
-    <section id="team" className="py-20 sm:py-32 bg-muted/30">
+    <section id="team" className="py-20 sm:py-32 bg-muted/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display">Meet Our Team</h2>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display tracking-tight">Meet Our Team</h2>
           <p className="text-lg text-muted-foreground">
             Expert professionals dedicated to your success
           </p>
         </div>
 
         <div className="max-w-2xl mx-auto">
-          <Card className="overflow-hidden hover-elevate">
+          <Card className="overflow-hidden hover-elevate border-border/50">
             <div className="grid md:grid-cols-2">
               <div className="relative h-full min-h-[400px]">
                 <img

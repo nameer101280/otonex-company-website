@@ -7,7 +7,7 @@ Professional company website for CloudForge Solutions, a DevOps automation and f
 - **Name**: CloudForge Solutions (example name - can be customized)
 - **Founder**: Nameer Arshad
 - **Location**: Brussels, Belgium
-- **Services**: DevOps Automation, Full-Stack Development, CI/CD Pipelines, Cloud Infrastructure, Linux Administration, Database Optimization
+- **Services**: DevOps Automation, Full-Stack Development, Cloud Infrastructure, AI Integration, Database Optimization, Web Design
 
 ## Website Sections
 1. **Hero**: Eye-catching landing section with company tagline and key statistics
@@ -31,10 +31,23 @@ Professional company website for CloudForge Solutions, a DevOps automation and f
 - SEO-optimized with meta tags
 - Contact information from resume included
 
+## Design Philosophy
+**Minimal • Modern • Professional**
+- Clean, neutral color palette with subtle blue accent
+- Generous whitespace and breathing room
+- Reduced shadows and borders for cleaner aesthetic
+- Focus on typography and content hierarchy
+- Inspired by companies like Linear, Vercel, and Stripe
+
 ## Recent Changes (November 21, 2024)
 - Transformed from personal portfolio to company website
+- Updated to minimal, modern design aesthetic
+- Added AI Integration as a core service offering
+- Refined color scheme with neutral blues/grays
+- Reduced visual noise (lighter shadows, subtle borders)
+- Improved typography hierarchy and spacing
 - Updated hero section with company branding
-- Added comprehensive services section
+- Added comprehensive services section (6 services)
 - Created team section featuring founder profile
 - Updated contact information with real details from resume
 - Added company statistics (8+ years experience, 50+ projects, 99.8% uptime)
