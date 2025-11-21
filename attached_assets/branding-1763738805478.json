@@ -1,0 +1,102 @@
+{
+  "colorScheme": "dark",
+  "fonts": [
+    {
+      "family": "Figtree",
+      "role": "body"
+    }
+  ],
+  "colors": {
+    "primary": "#814AC8",
+    "accent": "#0000EE",
+    "background": "#000000",
+    "textPrimary": "#000000",
+    "link": "#0000EE"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Figtree",
+      "heading": "Figtree"
+    },
+    "fontStacks": {
+      "heading": [
+        "Figtree",
+        "sans-serif"
+      ],
+      "body": [
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Figtree",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "70px",
+      "h2": "50px",
+      "body": "21px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "0px"
+  },
+  "components": {
+    "input": {
+      "borderColor": "#CCCCCC",
+      "borderRadius": "0px"
+    },
+    "buttonPrimary": {
+      "background": "#814AC8",
+      "textColor": "#0000EE",
+      "borderRadius": "6px",
+      "shadow": "rgba(0, 0, 0, 0.15) 0px 0.706592px 0.706592px -0.625px, rgba(0, 0, 0, 0.145) 0px 1.80656px 1.80656px -1.25px, rgba(0, 0, 0, 0.137) 0px 3.62176px 3.62176px -1.875px, rgba(0, 0, 0, 0.125) 0px 6.8656px 6.8656px -2.5px, rgba(0, 0, 0, 0.106) 0px 13.6468px 13.6468px -3.125px, rgba(0, 0, 0, 0.05) 0px 30px 30px -3.75px"
+    },
+    "buttonSecondary": {
+      "background": "#0A0A0A",
+      "textColor": "#0000EE",
+      "borderRadius": "8px",
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "File saved at: attached_assets/logo.svg",
+    "favicon": "File saved at: attached_assets/favicon.png",
+    "ogImage": "File saved at: attached_assets/ogImage.png"
+  },
+  "__framework_hints": [
+    "Framer 189896a"
+  ],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "The logo in the header matches the brand name 'Xtract' and is visible, making it the primary brand logo.",
+    "confidence": 0.98
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 0,
+      "text": "Book a free callBook a free call",
+      "reasoning": "Button #0 has a vibrant background color (#814AC8) and action-oriented text ('Book a free call'), making it the primary call-to-action."
+    },
+    "secondary": {
+      "index": 2,
+      "text": "Ryan MitchellLead Data Scientist",
+      "reasoning": "Button #2 has a different background color (#0A0A0A) compared to the primary button and serves a less prominent role, making it suitable as the secondary button."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "modern",
+    "energy": "medium",
+    "targetAudience": "tech-savvy individuals and businesses looking for data solutions."
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": null
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  }
+}
