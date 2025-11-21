@@ -70,51 +70,51 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 sm:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display">Featured Projects</h2>
+        <div className="text-center mb-20">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display tracking-tight">Featured Projects</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A collection of my recent work spanning web applications, mobile apps, and enterprise solutions.
+            A collection of client solutions spanning web applications, mobile apps, and enterprise platforms.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="group overflow-hidden hover-elevate transition-all duration-300"
+              className="group overflow-hidden hover-elevate transition-all duration-300 border-border/50"
               data-testid={`card-project-${project.id}`}
             >
-              <div className="relative overflow-hidden">
+              <div className="relative overflow-hidden bg-muted">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110"
                   data-testid={`img-project-${project.id}`}
                 />
               </div>
-              <CardHeader>
+              <CardHeader className="space-y-3">
                 <CardTitle className="font-display text-2xl">{project.title}</CardTitle>
-                <CardDescription className="text-base">{project.description}</CardDescription>
+                <CardDescription className="text-sm leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 pt-2">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" data-testid={`badge-tech-${tech}`}>
+                    <Badge key={tech} variant="secondary" className="text-xs" data-testid={`badge-tech-${tech}`}>
                       {tech}
                     </Badge>
                   ))}
                 </div>
-                <div className="flex gap-3">
-                  <Button variant="outline" size="sm" asChild data-testid={`button-live-${project.id}`}>
+                <div className="flex gap-2 pt-4">
+                  <Button variant="outline" size="sm" asChild className="flex-1" data-testid={`button-live-${project.id}`}>
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
-                      <ExternalLink className="h-4 w-4" />
-                      Live Demo
+                      <ExternalLink className="h-3.5 w-3.5" />
+                      <span className="hidden sm:inline">Live</span>
                     </a>
                   </Button>
-                  <Button variant="outline" size="sm" asChild data-testid={`button-github-${project.id}`}>
+                  <Button variant="outline" size="sm" asChild className="flex-1" data-testid={`button-github-${project.id}`}>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
-                      <Github className="h-4 w-4" />
-                      Code
+                      <Github className="h-3.5 w-3.5" />
+                      <span className="hidden sm:inline">Code</span>
                     </a>
                   </Button>
                 </div>

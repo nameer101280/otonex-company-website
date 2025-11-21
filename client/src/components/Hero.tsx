@@ -70,10 +70,10 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <button
             onClick={scrollToServices}
-            className="text-muted-foreground hover:text-foreground transition-colors"
+            className="text-muted-foreground hover:text-foreground transition-all duration-300 animate-pulse"
             data-testid="button-scroll-indicator"
           >
             <ChevronDown className="h-6 w-6" />

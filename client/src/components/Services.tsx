@@ -71,32 +71,32 @@ export function Services() {
             return (
               <Card
                 key={service.id}
-                className="group hover-elevate transition-all duration-300 border-border/50"
+                className="group hover-elevate transition-all duration-300 border-border/40 hover:border-border/60"
                 data-testid={`card-service-${service.id}`}
               >
                 <CardHeader className="space-y-4">
-                  <div className="flex items-center justify-between">
-                    <div className="p-2.5 bg-primary/5 rounded-lg">
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="p-2 bg-primary/5 rounded-lg flex-shrink-0 group-hover:bg-primary/10 transition-colors">
                       <Icon className="h-5 w-5 text-primary" />
                     </div>
-                    <Badge variant="secondary" className="text-xs font-normal">
+                    <Badge variant="secondary" className="text-xs font-normal whitespace-nowrap">
                       {service.highlight}
                     </Badge>
                   </div>
                   <div className="space-y-2">
-                    <CardTitle className="font-display text-xl font-semibold tracking-tight">{service.title}</CardTitle>
+                    <CardTitle className="font-display text-lg font-semibold tracking-tight">{service.title}</CardTitle>
                     <CardDescription className="text-sm leading-relaxed">{service.description}</CardDescription>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-2.5">
+                  <div className="space-y-3">
                     {service.features.map((feature, idx) => (
                       <div
                         key={idx}
-                        className="flex items-center gap-2.5 text-sm text-muted-foreground"
+                        className="flex items-center gap-3 text-sm text-muted-foreground"
                         data-testid={`feature-${service.id}-${idx}`}
                       >
-                        <div className="h-1 w-1 rounded-full bg-primary flex-shrink-0" />
+                        <div className="h-1.5 w-1.5 rounded-full bg-primary/60 flex-shrink-0 group-hover:bg-primary transition-colors" />
                         <span>{feature}</span>
                       </div>
                     ))}
