@@ -21,16 +21,16 @@ export function Hero() {
         <div className="text-left space-y-6">
           <div className="animate-fade-in-up">
             <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight leading-tight">
-              <span className="text-white">We Build Solutions That</span>
+              <span className="text-white">Custom Products That</span>
               <br />
               <span className="brand-logo block mt-3 animate-pulse-glow">
-                Scale Your Revenue
+                Turn Clicks Into Revenue
               </span>
             </h1>
           </div>
           
-          <p className="text-lg text-gray-400 max-w-2xl animate-fade-in-up stagger-1 font-normal leading-relaxed">
-            Not just code. Custom applications, mobile solutions, and intelligent automation designed to convert customers and accelerate growth.
+          <p className="text-lg text-gray-300 max-w-2xl animate-fade-in-up stagger-1 font-normal leading-relaxed">
+            We think like your customers, not just developers. Web apps, mobile solutions, and intelligent automation built to convert, scale, and dominate your market.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up stagger-2">
@@ -52,7 +52,7 @@ export function Hero() {
           </div>
 
           <p className="text-sm text-gray-600 pt-8 animate-fade-in-up stagger-3 font-normal">
-            Trusted by 50+ ambitious founders
+            From concept to market in weeks, not quarters. Trusted by 50+ founders scaling to 6-7 figures.
           </p>
         </div>
 
