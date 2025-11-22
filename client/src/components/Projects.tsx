@@ -70,7 +70,7 @@ export function Projects() {
   return (
     <section id="projects" className="py-16 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-12 sm:mb-16 scroll-reveal">
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 font-display tracking-tight">Featured Projects</h2>
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             A collection of client solutions spanning web applications, mobile apps, and enterprise platforms.
@@ -81,7 +81,8 @@ export function Projects() {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className={`group overflow-hidden hover-elevate transition-all duration-300 border-border/50 animate-fade-in-up stagger-${project.id % 5}`}
+              className={`group overflow-hidden hover-elevate transition-all duration-300 border-border/50 scroll-reveal`}
+              style={{ ['--delay' as string]: `${(project.id % 5) * 0.06}s` }}
               data-testid={`card-project-${project.id}`}
             >
               <div className="relative overflow-hidden bg-muted">

@@ -6,7 +6,7 @@ export function About() {
   return (
     <section id="about" className="py-20 sm:py-32 bg-muted/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 scroll-reveal">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 font-display tracking-tight">About Autonex</h2>
           <p className="text-lg text-muted-foreground">
             Your trusted partner in modern DevOps and cloud transformation
@@ -47,7 +47,7 @@ export function About() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <Card className="text-center border-border/50 animate-fade-in-up stagger-1">
+          <Card className="text-center border-border/50 scroll-reveal" style={{ ['--delay' as string]: '0.05s' }}>
             <CardContent className="pt-10 pb-10">
               <div className="flex justify-center mb-5">
                 <div className="p-2.5 bg-primary/5 rounded-lg group hover:bg-primary/10 transition-colors">
@@ -61,7 +61,7 @@ export function About() {
             </CardContent>
           </Card>
 
-          <Card className="text-center border-border/50 animate-fade-in-up stagger-2">
+          <Card className="text-center border-border/50 scroll-reveal" style={{ ['--delay' as string]: '0.1s' }}>
             <CardContent className="pt-10 pb-10">
               <div className="flex justify-center mb-5">
                 <div className="p-2.5 bg-primary/5 rounded-lg group hover:bg-primary/10 transition-colors">
@@ -75,7 +75,7 @@ export function About() {
             </CardContent>
           </Card>
 
-          <Card className="text-center border-border/50 animate-fade-in-up stagger-3">
+          <Card className="text-center border-border/50 scroll-reveal" style={{ ['--delay' as string]: '0.15s' }}>
             <CardContent className="pt-10 pb-10">
               <div className="flex justify-center mb-5">
                 <div className="p-2.5 bg-primary/5 rounded-lg group hover:bg-primary/10 transition-colors">

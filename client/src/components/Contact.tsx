@@ -1,108 +1,119 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Linkedin, Mail, ArrowUp, Phone, MapPin } from 'lucide-react';
+import { ArrowUp, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 export function Contact() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const contactOptions = [
+    {
+      icon: Mail,
+      label: 'Email',
+      value: 'nameerarshad@hotmail.com',
+      href: 'mailto:nameerarshad@hotmail.com',
+      testId: 'link-email-primary',
+    },
+    {
+      icon: Phone,
+      label: 'Phone',
+      value: '+32 465 41 06 98',
+      href: 'tel:+32465410698',
+      testId: 'link-phone',
+    },
+    {
+      icon: MapPin,
+      label: 'Location',
+      value: 'Brussels, Belgium',
+    },
+    {
+      icon: Linkedin,
+      label: 'LinkedIn',
+      value: 'Connect with us',
+      href: 'https://linkedin.com/in/nameer-arshad-13a5b620b',
+      testId: 'link-social-linkedin',
+    },
+  ];
+
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-black border-t border-purple-800/30 relative">
-      {/* Background effect */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-1/3 w-96 h-96 bg-gradient-to-br from-purple-800 to-purple-900 rounded-full mix-blend-multiply filter blur-3xl"></div>
+    <section id="contact" className="relative py-20 sm:py-24 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 left-1/3 w-72 h-72 bg-fuchsia-400/18 blur-3xl rounded-full"></div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-5xl font-light text-white mb-3 sm:mb-4">Let's Build Together</h2>
-          <p className="text-gray-400 text-sm sm:text-base">Ready to transform your idea into reality?</p>
+        <div className="text-center mb-12 sm:mb-14 space-y-3 scroll-reveal">
+          <div className="inline-flex items-center gap-2 glass-chip px-4 py-2 rounded-full text-xs uppercase tracking-[0.14em] text-slate-200">
+            Let’s build together
+          </div>
+          <h2 className="text-3xl sm:text-5xl font-semibold text-white tracking-tight">Ready for a launch-worthy build?</h2>
+          <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+            Tell us about the product, the outcomes you need, and the timeline. We’ll come back with a crisp plan.
+          </p>
         </div>
 
-        <Card className="mb-10 sm:mb-12 border border-purple-800/40 bg-black/40 hover:border-purple-700/70 transition-all duration-300 hover:bg-gradient-to-br hover:from-purple-900/30 hover:to-black animate-fade-in-up stagger-1">
-          <CardContent className="p-6 sm:p-10">
-            <div className="space-y-8 sm:space-y-10">
-              <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-2">
-                  <Mail className="h-5 w-5 text-purple-700/70 mt-0.5" />
-                  <div>
-                    <h4 className="font-medium text-white text-sm mb-1">Email</h4>
-                    <a
-                      href="mailto:nameerarshad@hotmail.com"
-                      className="text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
-                      data-testid="link-email-primary"
-                    >
-                      nameerarshad@hotmail.com
-                    </a>
+        <Card className="glass-card rounded-3xl border border-white/10 mb-10 sm:mb-12 scroll-reveal" style={{ ['--delay' as string]: '0.08s' }}>
+          <CardContent className="p-6 sm:p-10 space-y-8">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
+              {contactOptions.map((option) => {
+                const Icon = option.icon;
+                return (
+                  <div key={option.label} className="flex items-start gap-4">
+                    <div className="h-10 w-10 rounded-xl glass-chip border border-white/10 flex items-center justify-center text-cyan-200">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white text-sm mb-1">{option.label}</h4>
+                      {option.href ? (
+                        <a
+                          href={option.href}
+                          target={option.href.startsWith('http') ? '_blank' : undefined}
+                          rel={option.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          className="text-slate-300 hover:text-white transition-colors duration-200 text-sm"
+                          data-testid={option.testId}
+                        >
+                          {option.value}
+                        </a>
+                      ) : (
+                        <p className="text-slate-300 text-sm">{option.value}</p>
+                      )}
+                    </div>
                   </div>
-                </div>
+                );
+              })}
+            </div>
 
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-3">
-                  <Phone className="h-5 w-5 text-purple-700/70 mt-0.5" />
-                  <div>
-                    <h4 className="font-medium text-white text-sm mb-1">Phone</h4>
-                    <a
-                      href="tel:+32465410698"
-                      className="text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
-                      data-testid="link-phone"
-                    >
-                      +32 465 41 06 98
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-4">
-                  <MapPin className="h-5 w-5 text-purple-700/70 mt-0.5" />
-                  <div>
-                    <h4 className="font-medium text-white text-sm mb-1">Location</h4>
-                    <p className="text-gray-400 text-sm">Brussels, Belgium</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4 animate-fade-in-up stagger-5">
-                  <Linkedin className="h-5 w-5 text-purple-700/70 mt-0.5" />
-                  <div>
-                    <h4 className="font-medium text-white text-sm mb-1">LinkedIn</h4>
-                    <a
-                      href="https://linkedin.com/in/nameer-arshad-13a5b620b"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-purple-400 transition-colors duration-200 text-sm"
-                      data-testid="link-social-linkedin"
-                    >
-                      Connect with us
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-6 border-t border-purple-800/40 text-center animate-fade-in-up stagger-1">
-                <p className="text-gray-400 text-sm mb-4">
-                  Let's discuss your project and how we can help bring it to life.
-                </p>
-                <Button size="sm" className="bg-gradient-to-r from-purple-700 to-purple-900 hover:from-purple-600 hover:to-purple-800 text-white transition-all duration-200 rounded-sm px-6 py-2 text-sm font-medium" asChild data-testid="button-schedule-consultation">
-                  <a href="mailto:nameerarshad@hotmail.com?subject=Project%20Inquiry">
-                    Start a Conversation
-                  </a>
-                </Button>
-              </div>
+            <div className="pt-6 border-t border-white/10 text-center space-y-4">
+              <p className="text-slate-300 text-sm">
+                Share the problem, the audience, and your timeline. We’ll respond within one business day with next steps.
+              </p>
+              <Button
+                size="sm"
+                className="rounded-full px-6 py-2 bg-gradient-to-r from-cyan-300 via-blue-500 to-fuchsia-400 text-slate-950 font-semibold shadow-[0_12px_30px_rgba(43,209,252,0.35)]"
+                asChild
+                data-testid="button-schedule-consultation"
+              >
+                <a href="mailto:nameerarshad@hotmail.com?subject=Project%20Inquiry">
+                  Start a conversation
+                </a>
+              </Button>
             </div>
           </CardContent>
         </Card>
 
-        <footer className="text-center space-y-4 animate-fade-in-up stagger-2">
+        <footer className="text-center space-y-4">
           <Button
             variant="ghost"
             onClick={scrollToTop}
-            className="gap-2 text-gray-500 hover:text-purple-400 transition-colors duration-200"
+            className="gap-2 text-slate-400 hover:text-white transition-colors duration-200"
             size="sm"
             data-testid="button-back-to-top"
           >
             <ArrowUp className="h-4 w-4" />
             Back to Top
           </Button>
-          <p className="text-xs text-gray-600">
+          <p className="text-xs text-slate-500">
             © 2024 Autonex. All rights reserved.
           </p>
         </footer>
