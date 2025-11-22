@@ -2,8 +2,11 @@ import { useEffect } from 'react';
 
 export function useScrollReveal() {
   useEffect(() => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
     const elements = Array.from(
-      document.querySelectorAll<HTMLElement>('.scroll-reveal')
+      document.querySelectorAll<HTMLElement>('.scroll-reveal, .scroll-pop')
     );
 
     if (!elements.length) return;

@@ -12,7 +12,7 @@ export function Comparison() {
   ];
 
   return (
-    <section id="comparison" className="relative py-20 sm:py-24 overflow-hidden">
+    <section id="comparison" className="relative py-20 sm:py-24 overflow-hidden scroll-reveal" data-anim="slide-left">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute right-10 bottom-0 w-72 h-72 bg-fuchsia-500/20 blur-3xl rounded-full"></div>
       </div>

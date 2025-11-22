@@ -37,7 +37,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative py-20 sm:py-24 overflow-hidden">
+    <section id="contact" className="relative py-14 sm:py-16 overflow-hidden scroll-reveal" data-anim="fade">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/3 w-72 h-72 bg-fuchsia-400/18 blur-3xl rounded-full"></div>
       </div>
@@ -53,7 +53,7 @@ export function Contact() {
           </p>
         </div>
 
-        <Card className="glass-card rounded-3xl border border-white/10 mb-10 sm:mb-12 scroll-reveal" style={{ ['--delay' as string]: '0.08s' }}>
+        <Card className="glass-card rounded-3xl border border-white/10 mb-6 sm:mb-8 scroll-reveal" style={{ ['--delay' as string]: '0.08s' }}>
           <CardContent className="p-6 sm:p-10 space-y-8">
             <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
               {contactOptions.map((option) => {
@@ -102,7 +102,7 @@ export function Contact() {
           </CardContent>
         </Card>
 
-        <footer className="text-center space-y-4">
+        <footer className="text-center space-y-3 pb-6">
           <Button
             variant="ghost"
             onClick={scrollToTop}

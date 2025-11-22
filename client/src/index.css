@@ -1,11 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+/* Scroll pop effect inspired by view-timeline snippet */
+.scroll-pop {
+  opacity: 0;
+  transform: translateY(24px) scale(0.96);
+  transition: opacity 0.7s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-pop.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+@supports (animation-timeline: view()) {
+  .scroll-pop {
+    opacity: 1;
+    transform: none;
+    animation: pop-in 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation-timeline: view();
+    animation-range: entry 85% contain 45%;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 :root {
@@ -398,20 +431,100 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Scroll reveal */
+/* Scroll reveal (neutralized to avoid scroll sticking) */
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(16px) scale(0.985);
-  filter: blur(2px);
-  transition-property: opacity, transform, filter;
-  transition-duration: 0.85s;
-  transition-timing-function: cubic-bezier(0.21, 1, 0.29, 1);
-  transition-delay: var(--delay, 0s);
+  transition-property: opacity, transform;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
   will-change: opacity, transform;
+}
+
+.scroll-reveal[data-anim="fade"],
+.scroll-reveal:not([data-anim]) {
+  transform: translateY(18px) scale(0.99);
+}
+
+.scroll-reveal[data-anim="slide-left"] {
+  transform: translateX(22px);
+}
+
+.scroll-reveal[data-anim="slide-right"] {
+  transform: translateX(-22px);
+}
+
+.scroll-reveal[data-anim="scale-up"] {
+  transform: scale(0.94);
 }
 
 .scroll-reveal.is-visible {
   opacity: 1;
-  transform: translateY(0) scale(1);
-  filter: blur(0);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* Modern motion */
+@keyframes tilt {
+  0%, 100% { transform: rotateX(14deg) rotateY(-16deg) translateZ(0); }
+  50% { transform: rotateX(10deg) rotateY(-10deg) translateZ(6px); }
+}
+
+@keyframes pan-grid {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 26px 26px, 0 26px; }
+}
+
+@keyframes scan {
+  0% { transform: translateY(-20px); opacity: 0; }
+  30% { opacity: 0.9; }
+  100% { transform: translateY(20px); opacity: 0; }
+}
+
+@keyframes pulse-bar {
+  0%, 100% { width: 92%; }
+  50% { width: 98%; }
+}
+
+@keyframes sparkline {
+  0% { stroke-dasharray: 0 300; }
+  100% { stroke-dasharray: 300 300; }
+}
+
+.animate-tilt { animation: tilt 7s ease-in-out infinite; }
+.animate-pan-grid { animation: pan-grid 8s linear infinite; }
+.animate-scan { animation: scan 2.4s linear infinite; }
+.animate-pulse-bar { animation: pulse-bar 2.2s ease-in-out infinite; transform-origin: left; }
+.animate-sparkline { animation: sparkline 1.8s ease-out forwards; }
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-spin-slow { animation: spin-slow 14s linear infinite; }
+
+/* Prefer smooth scroll for a calmer experience */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ambient 3D-ish layers */
+@keyframes float-slow {
+  0%, 100% { transform: translate3d(0, -6px, 0); }
+  50% { transform: translate3d(0, 8px, 0); }
+}
+
+@keyframes drift-long {
+  0% { transform: translate3d(-6%, -2%, 0) rotate(-1deg); }
+  50% { transform: translate3d(4%, 4%, 0) rotate(1deg); }
+  100% { transform: translate3d(-6%, -2%, 0) rotate(-1deg); }
+}
+
+.bg-plane {
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  animation: drift-long 18s ease-in-out infinite;
+}
+
+.bg-orb {
+  animation: float-slow 9s ease-in-out infinite;
+  mix-blend-mode: screen;
+  filter: blur(50px);
 }

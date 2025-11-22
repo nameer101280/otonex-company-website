@@ -32,7 +32,7 @@ export function FAQ() {
   ];
 
   return (
-    <section id="faq" className="relative py-20 sm:py-24 overflow-hidden">
+    <section id="faq" className="relative py-20 sm:py-24 overflow-hidden scroll-reveal" data-anim="scale-up">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute right-10 bottom-0 w-72 h-72 bg-blue-400/18 blur-3xl rounded-full"></div>
       </div>

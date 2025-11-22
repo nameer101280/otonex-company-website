@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 import { useScrollReveal } from "./hooks/useScrollReveal";
+import { CursorGlow } from "@/components/CursorGlow";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
+        <CursorGlow />
         <Router />
       </TooltipProvider>
     </QueryClientProvider>

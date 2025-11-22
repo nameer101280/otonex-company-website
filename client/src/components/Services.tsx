@@ -34,7 +34,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-20 sm:py-24 overflow-hidden">
+    <section id="services" className="relative py-20 sm:py-24 overflow-hidden scroll-reveal" data-anim="fade">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute right-1/4 top-0 w-72 h-72 bg-cyan-300/20 blur-3xl rounded-full"></div>
       </div>
